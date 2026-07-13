@@ -6,35 +6,38 @@
 
 const STATIC_MODE = process.env.NEXT_PUBLIC_STATIC_MODE === 'true'
 
+// Base path para GitHub Pages (debe coincidir con next.config.ts basePath)
+const BASE_PATH = STATIC_MODE ? '/frimaral' : ''
+
 // Mapa de URLs API → archivos JSON estáticos
 function apiToStaticUrl(url: string): string | null {
   // Radar
-  if (url === '/api/radar') return '/data/radar.json'
+  if (url === '/api/radar') return `${BASE_PATH}/data/radar.json`
 
   // Dashboard
-  if (url === '/api/dashboard') return '/data/dashboard.json'
+  if (url === '/api/dashboard') return `${BASE_PATH}/data/dashboard.json`
 
   // Alerts
-  if (url === '/api/alerts' || url.startsWith('/api/alerts?')) return '/data/alertas.json'
+  if (url === '/api/alerts' || url.startsWith('/api/alerts?')) return `${BASE_PATH}/data/alertas.json`
 
   // Productores list
-  if (url.startsWith('/api/producers?') || url === '/api/producers') return '/data/productores.json'
+  if (url.startsWith('/api/producers?') || url === '/api/producers') return `${BASE_PATH}/data/productores.json`
 
   // Productor detalle
   const prodMatch = url.match(/^\/api\/producers\/([^?]+)$/)
-  if (prodMatch) return `/data/productores/${prodMatch[1]}.json`
+  if (prodMatch) return `${BASE_PATH}/data/productores/${prodMatch[1]}.json`
 
   // Competidores list
-  if (url.startsWith('/api/competitors?') || url === '/api/competitors') return '/data/competidores.json'
+  if (url.startsWith('/api/competitors?') || url === '/api/competitors') return `${BASE_PATH}/data/competidores.json`
 
   // Competidor detalle
   const compMatch = url.match(/^\/api\/competitors\/([^?]+)$/)
-  if (compMatch) return `/data/competidores/${compMatch[1]}.json`
+  if (compMatch) return `${BASE_PATH}/data/competidores/${compMatch[1]}.json`
 
   // Search
   if (url.startsWith('/api/search?')) {
     // En modo estático, devolvemos el índice y filtramos client-side
-    return '/data/search-index.json'
+    return `${BASE_PATH}/data/search-index.json`
   }
 
   return null

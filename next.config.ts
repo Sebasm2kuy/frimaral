@@ -11,6 +11,13 @@ const nextConfig: NextConfig = {
   // En modo estático usar 'export', en dinámico 'standalone'
   output: isStaticMode ? "export" : "standalone",
 
+  // GitHub Pages sirve en /frimaral/, necesitamos basePath
+  // Solo en modo estático
+  ...(isStaticMode ? {
+    basePath: "/frimaral",
+    assetPrefix: "/frimaral/",
+  } : {}),
+
   // Necesario para GitHub Pages (no soporta imágenes optimizadas)
   images: isStaticMode ? { unoptimized: true } : undefined,
 
