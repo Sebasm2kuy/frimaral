@@ -25,7 +25,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN bun run build
 
 # --- Stage 3: Runner (producción) ---
-FROM oven/bun:1.3 AS runner
+FROM oven/bun:1.3-debian AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
@@ -37,8 +37,8 @@ ENV HOSTNAME=0.0.0.0
 RUN bun add prisma @prisma/client
 
 # Crear usuario no-root para seguridad
-RUN addgroup --system --gid 1001 nodejs \
-  && adduser --system --uid 1001 nextjs
+RUN groupadd --system --gid 1001 nodejs \
+  && useradd --system --uid 1001 --gid nodejs --shell /bin/false --home-dir /app nextjs
 
 # Copiar archivos standalone
 COPY --from=builder /app/public ./public
