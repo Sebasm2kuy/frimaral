@@ -72,7 +72,7 @@ async function getTreeSha(commitSha: string): Promise<string> {
  * Crea un blob para cada archivo y devuelve el árbol.
  */
 async function createBlobs(files: Array<{ path: string; content: string }>): Promise<Array<{ path: string; sha: string; mode: string; type: string }>> {
-  const items = []
+  const items: Array<{ path: string; sha: string; mode: string; type: string }> = []
   for (const file of files) {
     // Codificar en base64 para soportar contenido binario/UTF-8
     const encoded = btoa(unescape(encodeURIComponent(file.content)))
