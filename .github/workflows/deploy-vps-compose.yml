@@ -1,0 +1,133 @@
+# ============================================================================
+# CALIRAL INSIGHT - Deploy con docker-compose en VPS
+# ============================================================================
+# Este workflow descarga la imagen ya publicada en GHCR y la despliega
+# en tu VPS usando docker-compose. No requiere build en el VPS.
+#
+# REQUIERE los secrets:
+#   - SSH_HOST, SSH_USER, SSH_PRIVATE_KEY, SSH_PORT, DEPLOY_PATH
+#   - JWT_SECRET, POSTGRES_PASSWORD (ya configurados)
+# ============================================================================
+
+name: Deploy to VPS (Docker Compose)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'prisma/**'
+      - 'public/**'
+      - 'package.json'
+      - 'bun.lock'
+      - 'Dockerfile'
+      - 'docker-compose.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to VPS
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Wait for Docker image to be ready
+        run: |
+          echo "⏳ Esperando que la imagen Docker esté publicada en GHCR..."
+          for i in {1..30}; do
+            if curl -fsS "https://github.com/users/Sebasm2kuy/packages/container/frimaral" > /dev/null 2>&1; then
+              echo "✅ Imagen disponible"
+              break
+            fi
+            sleep 10
+          done
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ secrets.SSH_PORT || 22 }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Create deployment directory
+        run: |
+          ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "mkdir -p ${{ secrets.DEPLOY_PATH }}"
+
+      - name: Create .env file on VPS
+        run: |
+          ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "cat > ${{ secrets.DEPLOY_PATH }}/.env << 'ENVEOF'
+          JWT_SECRET=${{ secrets.JWT_SECRET }}
+          POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+          PORT=3000
+          ENVEOF"
+
+      - name: Copy docker-compose.yml to VPS
+        run: |
+          scp -P ${{ secrets.SSH_PORT || 22 }} \
+            docker-compose.yml \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/docker-compose.yml
+
+      - name: Pull and restart services
+        run: |
+          ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ secrets.DEPLOY_PATH }} && \
+             docker compose --env-file .env pull && \
+             docker compose --env-file .env up -d --force-recreate --remove-orphans && \
+             docker image prune -f"
+
+      - name: Run database migrations
+        run: |
+          ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ secrets.DEPLOY_PATH }} && \
+             docker compose exec -T app bunx prisma db push --skip-generate --accept-data-loss 2>&1 || true"
+
+      - name: Health check
+        run: |
+          sleep 20
+          ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "for i in 1 2 3 4 5; do \
+               if curl -fsS http://localhost:3000 > /dev/null 2>&1; then \
+                 echo '✅ App respondiendo en http://localhost:3000'; exit 0; \
+               fi; \
+               echo '⏳ Esperando... (intento '\$i'/5)'; sleep 10; \
+             done; \
+             echo '❌ App no responde'; \
+             docker compose -f ${{ secrets.DEPLOY_PATH }}/docker-compose.yml logs --tail 30; \
+             exit 1"
+
+      - name: Deployment summary
+        if: always()
+        run: |
+          echo "## 🚀 Deploy a VPS" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ job.status }}" = "success" ]; then
+            echo "✅ **Estado:** Completado" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Acceso" >> $GITHUB_STEP_SUMMARY
+            echo "- URL: http://${{ secrets.SSH_HOST }}:3000" >> $GITHUB_STEP_SUMMARY
+            echo "- VPS: \`${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}\`" >> $GITHUB_STEP_SUMMARY
+            echo "- Path: \`${{ secrets.DEPLOY_PATH }}\`" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Login" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "admin@caliral.com / admin123" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Comandos útiles" >> $GITHUB_STEP_SUMMARY
+            echo '```bash' >> $GITHUB_STEP_SUMMARY
+            echo "ssh -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" >> $GITHUB_STEP_SUMMARY
+            echo "cd ${{ secrets.DEPLOY_PATH }}" >> $GITHUB_STEP_SUMMARY
+            echo "docker compose logs -f app" >> $GITHUB_STEP_SUMMARY
+            echo "docker compose restart app" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Estado:** Fallido" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Revisa los logs del step que falló arriba." >> $GITHUB_STEP_SUMMARY
+          fi
