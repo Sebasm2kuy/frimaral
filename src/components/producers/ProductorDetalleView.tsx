@@ -18,7 +18,7 @@ import {
 
 export function ProductorDetalleView({ productorId }: { productorId: string }) {
   const { back, select } = useNavStore()
-  const { data, isLoading } = useApi(`/api/producers/${productorId}`)
+  const { data, isLoading } = useApi<any>(`/api/producers/${productorId}`)
 
   if (isLoading) {
     return (

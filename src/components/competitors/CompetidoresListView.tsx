@@ -96,7 +96,7 @@ export function CompetidoresListView() {
                       <AlertCircle className="size-3" />
                       {c.clientesExclusivos} exclusivos del competidor
                     </span>
-                    {c.captaciones > 0 && (
+                    {(c.captaciones ?? 0) > 0 && (
                       <>
                         <span className="text-muted-foreground">·</span>
                         <span className="flex items-center gap-1 text-red-400">

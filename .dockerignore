@@ -1,0 +1,58 @@
+# CALIRAL INSIGHT - .dockerignore
+
+# Version control
+.git
+.gitignore
+.github
+
+# Dependencies (se reinstalan en el container)
+node_modules
+bun.lockb
+
+# Build artifacts
+.next
+out
+build
+dist
+
+# Database local
+*.db
+*.db-journal
+db/
+
+# Downloads generados
+download/
+
+# Tests y coverage
+coverage
+test
+*.test.ts
+*.spec.ts
+
+# Logs
+*.log
+dev.log
+server.log
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sandbox scripts
+.zscripts
+.z-ai-config
+
+# Docs (no necesarias en runtime)
+DEPLOY.md
+README.md
+prompt
+
+# Env files (se inyectan en runtime)
+.env
+.env.*
+!.env.example

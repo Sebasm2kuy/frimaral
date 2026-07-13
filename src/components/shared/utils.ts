@@ -29,7 +29,7 @@ export async function apiFetch<T = any>(
   return res.json()
 }
 
-export function useApi<T>(url: string | null, options?: { enabled?: boolean; refetchInterval?: number }) {
+export function useApi<T = any>(url: string | null, options?: { enabled?: boolean; refetchInterval?: number }) {
   return useQuery<T>({
     queryKey: [url],
     queryFn: () => apiFetch<T>(url!),

@@ -17,7 +17,7 @@ import {
 
 export function CompetidorDetalleView({ competidorId }: { competidorId: string }) {
   const { back, select } = useNavStore()
-  const { data, isLoading } = useApi(`/api/competitors/${competidorId}`)
+  const { data, isLoading } = useApi<any>(`/api/competitors/${competidorId}`)
 
   if (isLoading) {
     return (

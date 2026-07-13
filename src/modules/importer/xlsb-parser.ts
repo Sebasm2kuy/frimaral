@@ -376,7 +376,7 @@ export async function procesarImportacion(
           if (columnasDetectadas.destino) {
             const nombreDestino = normalizarNombre(fila[columnasDetectadas.destino] as string)
             if (nombreDestino) {
-              destinoId = destinoCache.get(nombreDestino)
+              destinoId = destinoCache.get(nombreDestino) ?? null
               if (!destinoId) {
                 let destino = await db.destino.findFirst({
                   where: { nombre: nombreDestino },
@@ -397,7 +397,7 @@ export async function procesarImportacion(
           if (columnasDetectadas.contenedor) {
             const codigoCont = String(fila[columnasDetectadas.contenedor] || '').trim().toUpperCase()
             if (codigoCont) {
-              contenedorId = contenedorCache.get(codigoCont)
+              contenedorId = contenedorCache.get(codigoCont) ?? null
               if (!contenedorId) {
                 let contenedor = await db.contenedor.findFirst({
                   where: { codigo: codigoCont },

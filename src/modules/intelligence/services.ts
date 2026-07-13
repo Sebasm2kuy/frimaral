@@ -318,8 +318,8 @@ export async function getCompetidoresList(): Promise<Competidor[]> {
     result.push({
       id: c.id,
       nombre: c.nombre,
-      cuit: c.cuit,
-      pais: c.pais,
+      cuit: c.cuit ?? undefined,
+      pais: c.pais ?? undefined,
       activo: c.activo,
       totalOperaciones: opActual,
       totalPeso: pesoActual._sum.pesoKg || 0,

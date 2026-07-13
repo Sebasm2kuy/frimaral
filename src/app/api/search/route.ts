@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
 
   // Buscar certificador
   const caliral = await getCaliral()
-  const certificadores = []
+  const certificadores: Array<{ id: string; nombre: string; esCaliral: boolean; activo: boolean; cuit: string | null }> = []
   if (caliral && caliral.nombre.includes(queryUpper)) {
     certificadores.push(caliral)
   }
