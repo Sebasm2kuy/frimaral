@@ -36,7 +36,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
@@ -50,5 +49,39 @@ test
 prompt
 
 server.log
+
 # Skills directory
 /skills/
+
+# Z scripts (sandbox infra)
+/.zscripts/
+
+# Database files (SQLite local)
+*.db
+*.db-journal
+/db/
+
+# Download directory (generated artifacts)
+/download/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# Bun
+bun.lockb
