@@ -1,0 +1,4 @@
+# Archivos XLSB subidos desde la app
+# Esta carpeta es monitoreada por el workflow process-xlsb.yml
+# Cuando se sube un archivo aquí, se procesa automáticamente y luego se elimina.
+

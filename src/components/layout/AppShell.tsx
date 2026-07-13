@@ -11,6 +11,7 @@ import { useNavStore, type View } from '@/stores/nav-store'
 import { apiFetch, formatRelative } from '@/components/shared/utils'
 import { BuscadorGlobal } from '@/components/search/BuscadorGlobal'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
+import { GitHubSettingsButton } from '@/components/shared/GitHubSettingsButton'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
@@ -230,6 +231,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </button>
 
             <ThemeToggle />
+
+            <GitHubSettingsButton />
 
             <Button
               variant="ghost"
