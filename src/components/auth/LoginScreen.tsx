@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Activity, Lock, Mail, Eye, EyeOff, Loader2, ShieldCheck } from 'lucide-react'
 import { useAuthStore } from '@/stores/auth-store'
-import { apiFetch } from '@/components/shared/utils'
+import { loginApi } from '@/components/shared/utils'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -29,10 +29,7 @@ export function LoginScreen() {
     if (!email || !password) return
     setLoading(true)
     try {
-      const res = await apiFetch<{ token: string; user: any }>('/api/auth/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, password }),
-      })
+      const res = await loginApi(email, password)
       setAuth(res.token, res.user)
       toast.success(`Bienvenido, ${res.user.nombre}`)
     } catch (err: any) {

@@ -1,0 +1,165 @@
+{
+  "productores": [
+    {
+      "id": "cmrjb8unu000bwt0n3u6m8ucx",
+      "nombre": "LAS MORAS SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unv000dwt0ndbpp5t33",
+      "nombre": "MERCEDES SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unx000ewt0ndj0u4ciu",
+      "nombre": "PAYSANDU SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unx000fwt0n5io4vxk5",
+      "nombre": "RIO NEGRO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uny000gwt0nl0m9wcqf",
+      "nombre": "DURAZNO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uny000hwt0n0au5mzev",
+      "nombre": "MINAS SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uny000iwt0nx6uwq6ge",
+      "nombre": "ROCHA SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unz000jwt0nl3to8s21",
+      "nombre": "TACUAREMBO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unz000kwt0na6ai57y2",
+      "nombre": "CASA BLANCA SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unz000lwt0n3ljo54cs",
+      "nombre": "SAN JACINTO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uo0000mwt0n0ymmqaph",
+      "nombre": "CARRASCO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uo0000nwt0n74apbuhx",
+      "nombre": "SANTA ELENA SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uo0000owt0n2sj424gz",
+      "nombre": "LA CALERA SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8uo0000pwt0niwdi2jfw",
+      "nombre": "PANDO SA",
+      "tipo": "productor"
+    },
+    {
+      "id": "cmrjb8unu000cwt0n16sltwwj",
+      "nombre": "FRIBOY SA",
+      "tipo": "productor"
+    }
+  ],
+  "competidores": [
+    {
+      "id": "cmrjb8unq0004wt0n7tk3d0vj",
+      "nombre": "FRIOPORT",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8unq0005wt0nxo3ugcdi",
+      "nombre": "LORSUAL",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8unq0006wt0n95glwrm9",
+      "nombre": "FRIGONAL",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8unr0007wt0np9m5lx45",
+      "nombre": "ROSARIO INDUSTRIAL",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8unr0008wt0nrbcqsq6b",
+      "nombre": "COLD STORAGE URUGUAY",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8unr0009wt0nog6naakz",
+      "nombre": "FRIPUR",
+      "tipo": "competidor"
+    },
+    {
+      "id": "cmrjb8uns000awt0nwer4pdc9",
+      "nombre": "FRIGOPUY",
+      "tipo": "competidor"
+    }
+  ],
+  "certificadores": [
+    {
+      "id": "cmrjb8uno0003wt0nybzr17d0",
+      "nombre": "CALIRAL",
+      "tipo": "certificador"
+    }
+  ],
+  "destinos": [
+    {
+      "id": "cmrjb8uo6000qwt0nex2f3x86",
+      "nombre": "ISRAEL",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo6000rwt0n8m5aoiy3",
+      "nombre": "COREA DEL SUR",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000swt0nsemwacpn",
+      "nombre": "JAPON",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000uwt0nmt394b8d",
+      "nombre": "UNION EUROPEA",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000vwt0ntxk15dm7",
+      "nombre": "ESTADOS UNIDOS",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000wwt0nxumwd3d6",
+      "nombre": "BRASIL",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000xwt0njdlswy8v",
+      "nombre": "CHILE",
+      "tipo": "destino"
+    },
+    {
+      "id": "cmrjb8uo7000twt0n6rm2x97v",
+      "nombre": "CHINA",
+      "tipo": "destino"
+    }
+  ]
+}

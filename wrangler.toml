@@ -1,0 +1,18 @@
+# CALIRAL INSIGHT - Configuración Cloudflare Pages + D1
+# Este archivo configura el despliegue en Cloudflare Pages
+# con base de datos D1 (SQLite gratis hasta 5GB)
+
+name = "caliral-insight"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# Base de datos D1 (SQLite gratis en Cloudflare)
+[[d1_databases]]
+binding = "DB"
+database_name = "caliral_insight"
+database_id = "auto"  # Se crea automáticamente en el primer deploy
+
+# Variables de entorno (configurar en dashboard de Cloudflare)
+# JWT_SECRET: generar con `openssl rand -base64 64`
+# NEXTAUTH_URL: https://caliral-insight.pages.dev

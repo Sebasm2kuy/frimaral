@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "totalProductores": 15,
+    "totalCompetidores": 7,
+    "totalOperaciones": 1081,
+    "totalImportaciones": 1,
+    "totalAlertas": 4,
+    "alertasNoLeidas": 4,
+    "periodos": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ]
+  },
+  "evolucion": [
+    {
+      "periodo": "2024-01",
+      "opCaliral": 75,
+      "opCompetencia": 12
+    },
+    {
+      "periodo": "2024-02",
+      "opCaliral": 75,
+      "opCompetencia": 13
+    },
+    {
+      "periodo": "2024-03",
+      "opCaliral": 75,
+      "opCompetencia": 14
+    },
+    {
+      "periodo": "2024-04",
+      "opCaliral": 75,
+      "opCompetencia": 15
+    },
+    {
+      "periodo": "2024-05",
+      "opCaliral": 71,
+      "opCompetencia": 20
+    },
+    {
+      "periodo": "2024-06",
+      "opCaliral": 66,
+      "opCompetencia": 26
+    },
+    {
+      "periodo": "2024-07",
+      "opCaliral": 66,
+      "opCompetencia": 26
+    },
+    {
+      "periodo": "2024-08",
+      "opCaliral": 66,
+      "opCompetencia": 26
+    },
+    {
+      "periodo": "2024-09",
+      "opCaliral": 60,
+      "opCompetencia": 32
+    },
+    {
+      "periodo": "2024-10",
+      "opCaliral": 60,
+      "opCompetencia": 28
+    },
+    {
+      "periodo": "2024-11",
+      "opCaliral": 60,
+      "opCompetencia": 30
+    },
+    {
+      "periodo": "2024-12",
+      "opCaliral": 60,
+      "opCompetencia": 30
+    }
+  ]
+}

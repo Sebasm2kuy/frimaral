@@ -1,0 +1,170 @@
+{
+  "periodo": "2024-12",
+  "fechaGeneracion": "2026-07-13T16:10:16.646Z",
+  "conclusiones": [
+    {
+      "tipo": "COMPARTIDO",
+      "icono": "alert-triangle",
+      "titulo": "5 productor(es) comenzaron a operar con un competidor",
+      "mensaje": "LAS MORAS SA, MERCEDES SA, DURAZNO SA, SAN JACINTO SA, FRIBOY SA ahora comparten operaciones entre Caliral y otros depósitos. Riesgo de migración creciente.",
+      "severidad": "WARNING",
+      "datos": {
+        "productores": [
+          {
+            "id": "cmrjb8unu000bwt0n3u6m8ucx",
+            "nombre": "LAS MORAS SA"
+          },
+          {
+            "id": "cmrjb8unv000dwt0ndbpp5t33",
+            "nombre": "MERCEDES SA"
+          },
+          {
+            "id": "cmrjb8uny000gwt0nl0m9wcqf",
+            "nombre": "DURAZNO SA"
+          },
+          {
+            "id": "cmrjb8unz000lwt0n3ljo54cs",
+            "nombre": "SAN JACINTO SA"
+          },
+          {
+            "id": "cmrjb8unu000cwt0n16sltwwj",
+            "nombre": "FRIBOY SA"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "PERDIDA",
+      "icono": "x-circle",
+      "titulo": "2 cliente(s) abandonaron Caliral",
+      "mensaje": "CASA BLANCA SA, SANTA ELENA SA dejaron de operar con Caliral en el período actual. Investigar migración a competencia.",
+      "severidad": "CRITICAL",
+      "datos": {
+        "productores": [
+          {
+            "id": "cmrjb8unz000kwt0na6ai57y2",
+            "nombre": "CASA BLANCA SA"
+          },
+          {
+            "id": "cmrjb8uo0000nwt0n74apbuhx",
+            "nombre": "SANTA ELENA SA"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "OPORTUNIDAD",
+      "icono": "pie-chart",
+      "titulo": "Participación de Caliral: 66.7%",
+      "mensaje": "Caliral participa en 66.7% de las operaciones del período. Por encima del 50%: posición de liderazgo en el mercado.",
+      "severidad": "INFO"
+    }
+  ],
+  "metricas": {
+    "totalProductores": 15,
+    "productoresActivos": 12,
+    "productoresExclusivos": 7,
+    "productoresCompartidos": 5,
+    "productoresPerdidos": 2,
+    "productoresRecuperados": 0,
+    "productoresNuevos": 0,
+    "totalOperacionesCaliral": 60,
+    "totalPesoCaliral": 1787272.607340501,
+    "participacionCaliral": 66.66666666666666,
+    "competidoresActivos": 5,
+    "clientesEnRiesgo": 0
+  },
+  "topCompetidores": [
+    {
+      "competidor": {
+        "id": "cmrjb8unq0004wt0n7tk3d0vj",
+        "nombre": "FRIOPORT",
+        "cuit": "21-11111111-1",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.286Z",
+        "updatedAt": "2026-07-13T14:21:19.286Z",
+        "totalOperaciones": 17,
+        "totalPeso": 566903.3384540334,
+        "totalClientes": 4,
+        "crecimiento": 0,
+        "captaciones": 0
+      },
+      "crecimiento": 0,
+      "captaciones": 0
+    },
+    {
+      "competidor": {
+        "id": "cmrjb8unr0009wt0nog6naakz",
+        "nombre": "FRIPUR",
+        "cuit": "21-44444444-4",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.288Z",
+        "updatedAt": "2026-07-13T14:21:19.288Z",
+        "totalOperaciones": 5,
+        "totalPeso": 207499.4594475184,
+        "totalClientes": 1,
+        "crecimiento": 0,
+        "captaciones": 0
+      },
+      "crecimiento": 0,
+      "captaciones": 0
+    },
+    {
+      "competidor": {
+        "id": "cmrjb8unq0006wt0n95glwrm9",
+        "nombre": "FRIGONAL",
+        "cuit": "21-66666666-6",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.287Z",
+        "updatedAt": "2026-07-13T14:21:19.287Z",
+        "totalOperaciones": 4,
+        "totalPeso": 89010.59622212374,
+        "totalClientes": 1,
+        "crecimiento": 0,
+        "captaciones": 0
+      },
+      "crecimiento": 0,
+      "captaciones": 0
+    },
+    {
+      "competidor": {
+        "id": "cmrjb8unq0005wt0nxo3ugcdi",
+        "nombre": "LORSUAL",
+        "cuit": "21-55555555-5",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.287Z",
+        "updatedAt": "2026-07-13T14:21:19.287Z",
+        "totalOperaciones": 2,
+        "totalPeso": 66144.80201793411,
+        "totalClientes": 1,
+        "crecimiento": 0,
+        "captaciones": 0
+      },
+      "crecimiento": 0,
+      "captaciones": 0
+    },
+    {
+      "competidor": {
+        "id": "cmrjb8unr0007wt0np9m5lx45",
+        "nombre": "ROSARIO INDUSTRIAL",
+        "cuit": "21-77777777-7",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.287Z",
+        "updatedAt": "2026-07-13T14:21:19.287Z",
+        "totalOperaciones": 2,
+        "totalPeso": 76277.15162550527,
+        "totalClientes": 1,
+        "crecimiento": 0,
+        "captaciones": 0
+      },
+      "crecimiento": 0,
+      "captaciones": 0
+    }
+  ],
+  "clientesEnRiesgo": []
+}

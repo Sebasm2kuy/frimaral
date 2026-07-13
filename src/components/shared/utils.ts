@@ -2,12 +2,20 @@
 
 import { useState, useEffect } from 'react'
 import { useQuery } from '@tanstack/react-query'
+import { isStaticMode, staticFetch, STATIC_CREDENTIALS } from '@/lib/static-data'
 
 // Helper para hacer peticiones autenticadas
 export async function apiFetch<T = any>(
   url: string,
   options?: RequestInit
 ): Promise<T> {
+  // En modo estático, cargar desde JSON
+  if (isStaticMode()) {
+    const staticData = await staticFetch<T>(url)
+    if (staticData !== null) return staticData
+    throw new Error('Endpoint no disponible en modo estático')
+  }
+
   const token = typeof window !== 'undefined'
     ? JSON.parse(localStorage.getItem('caliral-auth') || '{}')?.state?.token
     : null
@@ -35,6 +43,35 @@ export function useApi<T = any>(url: string | null, options?: { enabled?: boolea
     queryFn: () => apiFetch<T>(url!),
     enabled: !!url && (options?.enabled !== false),
     refetchInterval: options?.refetchInterval,
+    retry: isStaticMode() ? false : 3,
+  })
+}
+
+// Login que funciona en modo estático y dinámico
+export async function loginApi(email: string, password: string): Promise<{ token: string; user: any }> {
+  if (isStaticMode()) {
+    // En modo estático, validar contra credenciales demo
+    const cred = STATIC_CREDENTIALS.find(
+      (c) => c.email === email.toLowerCase().trim() && c.password === password
+    )
+    if (!cred) {
+      throw new Error('Credenciales inválidas')
+    }
+    return {
+      token: 'static-demo-token',
+      user: {
+        id: 'static-' + cred.rol.toLowerCase(),
+        email: cred.email,
+        nombre: cred.nombre,
+        rol: cred.rol,
+      },
+    }
+  }
+
+  // Modo dinámico: llamar a la API
+  return apiFetch<{ token: string; user: any }>('/api/auth/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, password }),
   })
 }
 

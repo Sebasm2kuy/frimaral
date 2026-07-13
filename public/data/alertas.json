@@ -1,0 +1,128 @@
+{
+  "alertas": [
+    {
+      "id": "cmrjdd5n802hzwteebgadlfhx",
+      "tipo": "MIGRACION",
+      "severidad": "CRITICAL",
+      "productorId": "cmrjb8uo0000nwt0n74apbuhx",
+      "competidorId": "cmrjb8unr0009wt0nog6naakz",
+      "periodo": "2024-12",
+      "titulo": "SANTA ELENA SA migró a FRIPUR",
+      "mensaje": "SANTA ELENA SA migró sus operaciones de Caliral a FRIPUR.",
+      "datosJson": "{\"competidorId\":\"cmrjb8unr0009wt0nog6naakz\",\"competidorNombre\":\"FRIPUR\"}",
+      "leida": false,
+      "createdAt": "2026-07-13T15:20:39.381Z",
+      "generadaPorId": null,
+      "productor": {
+        "id": "cmrjb8uo0000nwt0n74apbuhx",
+        "nombre": "SANTA ELENA SA",
+        "cuit": "21-10000007-7",
+        "razonSocial": "Frigorífico Santa Elena SA",
+        "pais": "Uruguay",
+        "provincia": "Salto",
+        "localidad": "Salto",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.296Z",
+        "updatedAt": "2026-07-13T14:21:19.296Z"
+      },
+      "competidor": {
+        "id": "cmrjb8unr0009wt0nog6naakz",
+        "nombre": "FRIPUR",
+        "cuit": "21-44444444-4",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.288Z",
+        "updatedAt": "2026-07-13T14:21:19.288Z"
+      }
+    },
+    {
+      "id": "cmrjdd5n702hxwteel23pxjce",
+      "tipo": "CLIENTE_PERDIDO",
+      "severidad": "CRITICAL",
+      "productorId": "cmrjb8uo0000nwt0n74apbuhx",
+      "competidorId": null,
+      "periodo": "2024-12",
+      "titulo": "SANTA ELENA SA abandonó Caliral",
+      "mensaje": "SANTA ELENA SA dejó de operar con Caliral en 2024-12. Continúa operando con competencia.",
+      "datosJson": "{\"estado\":\"PERDIDO\"}",
+      "leida": false,
+      "createdAt": "2026-07-13T15:20:39.379Z",
+      "generadaPorId": null,
+      "productor": {
+        "id": "cmrjb8uo0000nwt0n74apbuhx",
+        "nombre": "SANTA ELENA SA",
+        "cuit": "21-10000007-7",
+        "razonSocial": "Frigorífico Santa Elena SA",
+        "pais": "Uruguay",
+        "provincia": "Salto",
+        "localidad": "Salto",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.296Z",
+        "updatedAt": "2026-07-13T14:21:19.296Z"
+      },
+      "competidor": null
+    },
+    {
+      "id": "cmrjdd52202fvwteemdcwipwx",
+      "tipo": "MIGRACION",
+      "severidad": "CRITICAL",
+      "productorId": "cmrjb8unz000kwt0na6ai57y2",
+      "competidorId": "cmrjb8unq0004wt0n7tk3d0vj",
+      "periodo": "2024-12",
+      "titulo": "CASA BLANCA SA migró a FRIOPORT",
+      "mensaje": "CASA BLANCA SA migró sus operaciones de Caliral a FRIOPORT.",
+      "datosJson": "{\"competidorId\":\"cmrjb8unq0004wt0n7tk3d0vj\",\"competidorNombre\":\"FRIOPORT\"}",
+      "leida": false,
+      "createdAt": "2026-07-13T15:20:38.618Z",
+      "generadaPorId": null,
+      "productor": {
+        "id": "cmrjb8unz000kwt0na6ai57y2",
+        "nombre": "CASA BLANCA SA",
+        "cuit": "21-10000004-4",
+        "razonSocial": "Frigorífico Casa Blanca SA",
+        "pais": "Uruguay",
+        "provincia": "Canelones",
+        "localidad": "Canelones",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.296Z",
+        "updatedAt": "2026-07-13T14:21:19.296Z"
+      },
+      "competidor": {
+        "id": "cmrjb8unq0004wt0n7tk3d0vj",
+        "nombre": "FRIOPORT",
+        "cuit": "21-11111111-1",
+        "pais": "Uruguay",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.286Z",
+        "updatedAt": "2026-07-13T14:21:19.286Z"
+      }
+    },
+    {
+      "id": "cmrjdd52102ftwteegxivn021",
+      "tipo": "CLIENTE_PERDIDO",
+      "severidad": "CRITICAL",
+      "productorId": "cmrjb8unz000kwt0na6ai57y2",
+      "competidorId": null,
+      "periodo": "2024-12",
+      "titulo": "CASA BLANCA SA abandonó Caliral",
+      "mensaje": "CASA BLANCA SA dejó de operar con Caliral en 2024-12. Continúa operando con competencia.",
+      "datosJson": "{\"estado\":\"PERDIDO\"}",
+      "leida": false,
+      "createdAt": "2026-07-13T15:20:38.617Z",
+      "generadaPorId": null,
+      "productor": {
+        "id": "cmrjb8unz000kwt0na6ai57y2",
+        "nombre": "CASA BLANCA SA",
+        "cuit": "21-10000004-4",
+        "razonSocial": "Frigorífico Casa Blanca SA",
+        "pais": "Uruguay",
+        "provincia": "Canelones",
+        "localidad": "Canelones",
+        "activo": true,
+        "createdAt": "2026-07-13T14:21:19.296Z",
+        "updatedAt": "2026-07-13T14:21:19.296Z"
+      },
+      "competidor": null
+    }
+  ]
+}
