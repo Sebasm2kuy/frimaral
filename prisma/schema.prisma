@@ -1,0 +1,292 @@
+// CALIRAL INSIGHT - Esquema de Base de Datos
+// Depósito Frigorífico y Certificador - Inteligencia Comercial
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// USUARIOS Y ROLES
+// ============================================================
+
+model Usuario {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  nombre       String
+  passwordHash String
+  rol          Rol      @default(COMERCIAL)
+  activo       Boolean  @default(true)
+  ultimoLogin  DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  importaciones Importacion[]
+  alertas       Alerta[]
+}
+
+enum Rol {
+  ADMINISTRADOR
+  COMERCIAL
+  LECTOR
+}
+
+// ============================================================
+// ENTIDADES PRINCIPALES DEL DOMINIO
+// ============================================================
+
+// Caliral (nuestro depósito/certificador). En práctica es uno solo.
+model Certificador {
+  id        String   @id @default(cuid())
+  nombre    String   @unique
+  esCaliral Boolean  @default(false)
+  cuit      String?
+  activo    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  operaciones Operacion[]
+}
+
+// Otros depósitos frigoríficos y certificadores competidores
+model Competidor {
+  id          String   @id @default(cuid())
+  nombre      String   @unique
+  cuit        String?
+  pais        String?
+  activo      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  operaciones Operacion[]
+  alertas     Alerta[]
+}
+
+// Frigoríficos y establecimientos productores (clientes de Caliral)
+model Productor {
+  id        String   @id @default(cuid())
+  nombre    String   @unique
+  cuit      String?
+  razonSocial String?
+  pais      String   @default("Uruguay")
+  provincia String?
+  localidad String?
+  activo    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  operaciones Operacion[]
+  historicos  Historico[]
+  alertas     Alerta[]
+}
+
+// Destino de exportación (país)
+model Destino {
+  id        String   @id @default(cuid())
+  nombre    String   @unique
+  pais      String
+  region    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  operaciones Operacion[]
+}
+
+// Contenedor asociado a operaciones
+model Contenedor {
+  id        String   @id @default(cuid())
+  codigo    String   @unique
+  tipo      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  operaciones Operacion[]
+}
+
+// ============================================================
+// OPERACIONES - Registro individual de cada operación
+// ============================================================
+
+model Operacion {
+  id            String   @id @default(cuid())
+  productorId   String
+  certificadorId String? // Si la operación pasó por Caliral
+  competidorId   String?  // Si la operación pasó por un competidor
+  destinoId     String?
+  contenedorId  String?
+  importacionId String
+
+  // Datos de la operación
+  fecha         DateTime
+  periodo       String   // "2024-01" para agrupar
+  producto      String?
+  cantidad      Float    @default(0)  // Cantidad de cabezas/unidades
+  pesoKg        Float    @default(0)  // Peso en kilogramos
+  valorUsd      Float    @default(0)  // Valor en dólares
+
+  // Metadata
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  productor     Productor     @relation(fields: [productorId], references: [id])
+  certificador  Certificador? @relation(fields: [certificadorId], references: [id])
+  competidor    Competidor?   @relation(fields: [competidorId], references: [id])
+  destino       Destino?      @relation(fields: [destinoId], references: [id])
+  contenedor    Contenedor?   @relation(fields: [contenedorId], references: [id])
+  importacion   Importacion   @relation(fields: [importacionId], references: [id])
+
+  @@index([productorId, periodo])
+  @@index([certificadorId, periodo])
+  @@index([competidorId, periodo])
+  @@index([periodo])
+  @@index([fecha])
+}
+
+// ============================================================
+// IMPORTACIONES - Historial ilimitado de archivos XLSB cargados
+// ============================================================
+
+model Importacion {
+  id            String   @id @default(cuid())
+  fileName      String
+  fileSize      Int
+  periodo       String   // "2024-01" extraído del archivo o nombre
+  uploadedById  String
+  status        ImportacionStatus @default(PROCESANDO)
+  totalRows     Int      @default(0)
+  validRows     Int      @default(0)
+  duplicateRows Int      @default(0)
+  errorRows     Int      @default(0)
+  hojasDetectadas String? // JSON con lista de hojas
+  columnasDetectadas String? // JSON con mapeo de columnas
+  errores       String?  // JSON con detalles de errores
+  startedAt     DateTime @default(now())
+  completedAt   DateTime?
+
+  uploadedBy    Usuario     @relation(fields: [uploadedById], references: [id])
+  operaciones   Operacion[]
+
+  @@index([periodo])
+  @@index([uploadedById])
+}
+
+enum ImportacionStatus {
+  PROCESANDO
+  COMPLETADO
+  ERROR
+  PARCIAL
+}
+
+// ============================================================
+// HISTÓRICO - Snapshot por productor por periodo
+// ============================================================
+
+model Historico {
+  id                 String   @id @default(cuid())
+  productorId        String
+  periodo            String   // "2024-01"
+  
+  // Métricas con Caliral
+  operacionesCaliral     Int     @default(0)
+  pesoCaliral            Float   @default(0)
+  valorCaliral           Float   @default(0)
+  
+  // Métricas con competidores
+  operacionesCompetencia Int     @default(0)
+  pesoCompetencia        Float   @default(0)
+  valorCompetencia       Float   @default(0)
+  
+  // Competidores usados en el periodo (JSON array de {competidorId, nombre, operaciones, peso})
+  competidoresUsadosJson String?
+  
+  // Estado del productor en este periodo
+  estado              EstadoCliente @default(ACTIVO)
+  
+  // Risk score calculado para este periodo
+  riskScore           Int      @default(0)
+  riskLevel           RiskLevel @default(BAJO)
+  riskFactoresJson    String?  // JSON con factores detallados
+  
+  // Recomendación comercial generada
+  recomendacion       String?
+  
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  productor           Productor @relation(fields: [productorId], references: [id])
+
+  @@unique([productorId, periodo])
+  @@index([productorId])
+  @@index([periodo])
+  @@index([estado])
+  @@index([riskLevel])
+}
+
+enum EstadoCliente {
+  NUEVO           // Primer periodo operando con Caliral
+  ACTIVO          // Opera con Caliral en este periodo
+  EXCLUSIVO       // Solo opera con Caliral
+  COMPARTIDO      // Opera con Caliral y al menos un competidor
+  PERDIDO         // Antes operaba con Caliral, ahora no
+  RECUPERADO      // Volvió a operar con Caliral tras estar perdido
+  INACTIVO        // No opera con nadie
+}
+
+enum RiskLevel {
+  BAJO
+  MEDIO
+  ALTO
+  CRITICO
+}
+
+// ============================================================
+// ALERTAS - Eventos comerciales detectados automáticamente
+// ============================================================
+
+model Alerta {
+  id            String   @id @default(cuid())
+  tipo          TipoAlerta
+  severidad     Severidad @default(INFO)
+  productorId   String?
+  competidorId  String?
+  periodo       String
+  titulo        String
+  mensaje       String
+  datosJson     String?  // JSON con datos adicionales
+  leida         Boolean  @default(false)
+  createdAt     DateTime @default(now())
+
+  productor     Productor?  @relation(fields: [productorId], references: [id])
+  competidor    Competidor? @relation(fields: [competidorId], references: [id])
+  generadaPor   Usuario?    @relation(fields: [generadaPorId], references: [id])
+  generadaPorId String?
+
+  @@index([tipo, periodo])
+  @@index([productorId])
+  @@index([competidorId])
+  @@index([leida])
+}
+
+enum TipoAlerta {
+  CLIENTE_PERDIDO        // Productor dejó de operar con Caliral
+  CLIENTE_RECUPERADO     // Productor volvió a operar con Caliral
+  CLIENTE_NUEVO          // Productor nuevo operando con Caliral
+  CLIENTE_COMPARTIDO     // Productor ahora usa competidor además de Caliral
+  RIESGO_ALTO            // Productor con riesgo alto detectado
+  RIESGO_CRITICO         // Productor con riesgo crítico
+  COMPETIDOR_CRECIMIENTO // Competidor creció significativamente
+  COMPETIDOR_CAPTACION   // Competidor captó un cliente de Caliral
+  MIGRACION              // Cliente migró de Caliral a competidor
+  DISMINUCION            // Reducción significativa de operaciones
+}
+
+enum Severidad {
+  INFO
+  WARNING
+  CRITICAL
+  SUCCESS
+}
