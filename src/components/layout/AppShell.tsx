@@ -10,6 +10,7 @@ import { useAuthStore } from '@/stores/auth-store'
 import { useNavStore, type View } from '@/stores/nav-store'
 import { apiFetch, formatRelative } from '@/components/shared/utils'
 import { BuscadorGlobal } from '@/components/search/BuscadorGlobal'
+import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
@@ -227,6 +228,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <span>Buscar productor, competidor...</span>
               <kbd className="ml-auto px-1.5 py-0.5 text-[10px] rounded border border-border bg-muted">⌘K</kbd>
             </button>
+
+            <ThemeToggle />
 
             <Button
               variant="ghost"

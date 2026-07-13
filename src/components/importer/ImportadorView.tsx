@@ -4,9 +4,10 @@ import { useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useApi, formatNumber, formatDateTime } from '@/components/shared/utils'
 import { useAuthStore } from '@/stores/auth-store'
+import { isStaticMode } from '@/lib/static-data'
 import {
   Upload, FileSpreadsheet, Loader2, CheckCircle2, XCircle,
-  AlertTriangle, FileUp, History
+  AlertTriangle, FileUp, History, Lock
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -17,15 +18,22 @@ import type { Importacion } from '@/types/domain'
 
 export function ImportadorView() {
   const { user } = useAuthStore()
+  const staticMode = isStaticMode()
   const [uploading, setUploading] = useState(false)
   const [progress, setProgress] = useState(0)
   const [progressStage, setProgressStage] = useState('')
   const [dragOver, setDragOver] = useState(false)
   const [lastResult, setLastResult] = useState<any>(null)
 
-  const { data, refetch } = useApi<{ importaciones: Importacion[] }>('/api/importaciones')
+  const { data, refetch } = useApi<{ importaciones: Importacion[] }>(
+    staticMode ? null : '/api/importaciones'
+  )
 
   const handleFile = useCallback(async (file: File) => {
+    if (staticMode) {
+      toast.error('La importación de archivos no está disponible en la versión demo (GitHub Pages).')
+      return
+    }
     if (!file) return
 
     const ext = file.name.split('.').pop()?.toLowerCase()
@@ -117,14 +125,39 @@ export function ImportadorView() {
         </Card>
       )}
 
-      <Card
-        className={`p-8 border-2 border-dashed transition-all ${
-          dragOver ? 'border-primary bg-primary/5' : 'border-border'
-        }`}
-        onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}
-        onDragLeave={() => setDragOver(false)}
-        onDrop={onDrop}
-      >
+      {/* Aviso en modo estático (GitHub Pages) */}
+      {staticMode && (
+        <Card className="p-5 border-blue-500/30 bg-blue-500/5">
+          <div className="flex gap-3">
+            <div className="size-9 rounded-lg bg-blue-500/15 flex items-center justify-center shrink-0">
+              <Lock className="size-4 text-blue-400" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-sm mb-1 text-blue-400">
+                Versión demo (GitHub Pages)
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                La importación de archivos XLSB requiere un servidor con backend (API Routes + base de datos).
+                Esta versión demo muestra los datos precargados del último build. Para funcionalidad completa
+                de importación, despliega la app con Docker o en cualquier hosting con Node.js.
+              </p>
+              <p className="text-xs text-muted-foreground mt-2">
+                📦 Imagen Docker: <code className="px-1.5 py-0.5 rounded bg-muted text-foreground">ghcr.io/sebasm2kuy/frimaral:latest</code>
+              </p>
+            </div>
+          </div>
+        </Card>
+      )}
+
+      {!staticMode && (
+        <Card
+          className={`p-8 border-2 border-dashed transition-all ${
+            dragOver ? 'border-primary bg-primary/5' : 'border-border'
+          }`}
+          onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}
+          onDragLeave={() => setDragOver(false)}
+          onDrop={onDrop}
+        >
         <div className="flex flex-col items-center justify-center text-center py-8">
           <motion.div
             animate={dragOver ? { scale: 1.1 } : { scale: 1 }}
@@ -171,6 +204,7 @@ export function ImportadorView() {
           )}
         </div>
       </Card>
+      )}
 
       <AnimatePresence>
         {lastResult && (

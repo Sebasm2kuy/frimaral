@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   description: "Sistema profesional de inteligencia comercial para depósitos frigoríficos y certificadores.",
   keywords: ["Caliral", "Inteligencia Comercial", "Depósito Frigorífico", "Certificador", "INAC"],
   authors: [{ name: "CALIRAL" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
