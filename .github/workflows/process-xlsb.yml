@@ -11,7 +11,9 @@ name: Process Uploaded XLSB
 on:
   push:
     paths:
-      - 'data/raw/**'
+      - 'data/raw/*.xlsb'
+      - 'data/raw/*.xlsx'
+      - 'data/raw/*.xls'
   workflow_dispatch:
     inputs:
       file:

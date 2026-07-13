@@ -84,6 +84,18 @@ async function main() {
     data: { nombre: 'CALIRAL', esCaliral: true, activo: true },
   })
 
+  // Crear usuario del sistema para la importación
+  const systemUser = await db.usuario.upsert({
+    where: { email: 'system@caliral.com' },
+    update: {},
+    create: {
+      email: 'system@caliral.com',
+      nombre: 'Sistema (GitHub Actions)',
+      passwordHash: 'system-no-login',
+      rol: 'ADMINISTRADOR',
+    },
+  })
+
   // 7. Insertar operaciones
   console.log('💾 Insertando operaciones en DB...')
 
@@ -94,30 +106,12 @@ async function main() {
   const contenedorCache = new Map<string, string>()
 
   // Crear importación
-  const importacion = await db.importacion.create({
+  const imp = await db.importacion.create({
     data: {
       fileName: path.basename(xlsbPath),
       fileSize: fileBuffer.length,
       periodo: new Date().toISOString().slice(0, 7),
-      uploadedById: 'system',
-      status: 'COMPLETADO',
-      totalRows: operaciones.length,
-      validRows: operaciones.length,
-      duplicateRows: duplicados,
-      errorRows: errFilas.length,
-      hojasDetectadas: JSON.stringify(parsed.hojasNombres),
-      columnasDetectadas: JSON.stringify(columnas),
-      completedAt: new Date(),
-    },
-  }).catch(() => null)
-
-  // Si falla (no hay usuario), crear importación sin uploadedById
-  const imp = importacion || await db.importacion.create({
-    data: {
-      fileName: path.basename(xlsbPath),
-      fileSize: fileBuffer.length,
-      periodo: new Date().toISOString().slice(0, 7),
-      uploadedById: 'cli',
+      uploadedById: systemUser.id,
       status: 'COMPLETADO',
       totalRows: operaciones.length,
       validRows: operaciones.length,
