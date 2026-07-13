@@ -50,11 +50,19 @@ export function ImportadorView() {
 
       setUploading(true)
       setProgress(5)
-      setProgressStage('Parseando archivo XLSB...')
+      setProgressStage('Iniciando...')
+
+      // Helper para actualizar progreso y ceder el control a React
+      const updateProgress = async (pct: number, stage: string) => {
+        setProgress(pct)
+        setProgressStage(stage)
+        // Ceder el control para que React renderice antes del siguiente paso pesado
+        await new Promise((r) => setTimeout(r, 100))
+      }
 
       try {
         // 1. Parsear el archivo client-side para validarlo
-        setProgress(15)
+        await updateProgress(15, `Parseando archivo XLSB (${(file.size / 1024).toFixed(0)} KB)...`)
         const parsed = await parseXLSBFile(file)
 
         if (parsed.hojas.length === 0) {
@@ -62,8 +70,7 @@ export function ImportadorView() {
         }
 
         // 2. Detectar columnas
-        setProgress(30)
-        setProgressStage('Detectando columnas automáticamente...')
+        await updateProgress(30, 'Detectando columnas automáticamente...')
         const columnas = detectarColumnas(parsed.hojas)
         const { valida, errores } = validarEstructura(columnas)
 
@@ -72,8 +79,7 @@ export function ImportadorView() {
         }
 
         // 3. Procesar filas para validar
-        setProgress(45)
-        setProgressStage('Procesando y validando datos...')
+        await updateProgress(45, `Procesando ${parsed.hojas.reduce((acc, h) => acc + h.filas.length, 0)} filas...`)
         const { operaciones, errores: errFilas, duplicados } = procesarFilas(parsed.hojas, columnas)
 
         if (operaciones.length === 0) {
@@ -81,8 +87,7 @@ export function ImportadorView() {
         }
 
         // 4. Convertir archivo a base64
-        setProgress(60)
-        setProgressStage('Preparando archivo para subir a GitHub...')
+        await updateProgress(60, 'Preparando archivo para subir a GitHub...')
         const buffer = await file.arrayBuffer()
         const bytes = new Uint8Array(buffer)
         let binary = ''
@@ -95,8 +100,7 @@ export function ImportadorView() {
         const fileName = `data/raw/${new Date().toISOString().slice(0, 10)}_${file.name}`
 
         // 5. Crear metadata
-        setProgress(70)
-        setProgressStage('Subiendo archivo al repositorio...')
+        await updateProgress(70, 'Subiendo archivo al repositorio...')
         const metadata = {
           fileName: file.name,
           fileSize: file.size,
@@ -110,8 +114,7 @@ export function ImportadorView() {
         }
 
         // 6. Subir via GitHub API
-        setProgress(85)
-        setProgressStage('Commit a GitHub...')
+        await updateProgress(85, 'Commit a GitHub...')
         const { commitSha } = await commitFiles(
           [
             { path: fileName, content: base64 },

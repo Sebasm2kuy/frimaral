@@ -37,8 +37,33 @@ const COLUMN_ALIASES: Record<string, string[]> = {
 }
 
 export async function parseXLSBFile(file: File): Promise<ParsedFile> {
+  // Leer archivo como ArrayBuffer
   const buffer = await file.arrayBuffer()
-  const workbook = XLSX.read(buffer, { type: 'array', cellDates: true })
+
+  // Ceder el control al browser para que React pueda renderizar el progreso
+  // antes de que XLSX.read bloquee el hilo principal (es síncrono)
+  await new Promise((resolve) => setTimeout(resolve, 50))
+
+  // XLSX.read con type:'array' espera un Uint8Array, NO un ArrayBuffer
+  const data = new Uint8Array(buffer)
+
+  // Parsing con timeout (60 segundos)
+  const workbook = await new Promise<XLSX.WorkBook>((resolve, reject) => {
+    const timeout = setTimeout(() => {
+      reject(new Error('Timeout: el archivo tardó demasiado en parsear (60s). Puede ser muy grande o estar corrupto.'))
+    }, 60000)
+
+    try {
+      // XLSX.read es síncrono y puede tardar para archivos grandes
+      const wb = XLSX.read(data, { type: 'array', cellDates: true })
+      clearTimeout(timeout)
+      resolve(wb)
+    } catch (err: any) {
+      clearTimeout(timeout)
+      reject(new Error(`Error al parsear XLSB: ${err.message || err}`))
+    }
+  })
+
   const hojas: ParsedSheet[] = []
 
   for (const sheetName of workbook.SheetNames) {
