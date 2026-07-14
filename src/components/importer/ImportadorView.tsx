@@ -6,7 +6,7 @@ import { useApi, formatNumber, formatDateTime } from '@/components/shared/utils'
 import { useAuthStore } from '@/stores/auth-store'
 import { isStaticMode } from '@/lib/static-data'
 import { hasGitHubToken, commitFiles } from '@/lib/github-api'
-import { parseXLSBFile, detectarColumnas, validarEstructura, procesarFilas } from '@/lib/xlsb-client-parser'
+import { parseXLSBFileWithWorker, detectarColumnas, validarEstructura, procesarFilas } from '@/lib/xlsb-worker-client'
 import {
   Upload, FileSpreadsheet, Loader2, CheckCircle2, XCircle,
   AlertTriangle, FileUp, History, Lock, Github, Sparkles, KeyRound
@@ -50,29 +50,37 @@ export function ImportadorView() {
       }
 
       setUploading(true)
-      setProgress(5)
+      setProgress(2)
       setProgressStage('Iniciando...')
       setErrorMsg(null)
 
-      // Helper para actualizar progreso y ceder el control a React
-      const updateProgress = async (pct: number, stage: string) => {
+      // Helper para actualizar progreso (sin await, el worker ya es async)
+      const updateProgress = (pct: number, stage: string) => {
         setProgress(pct)
         setProgressStage(stage)
-        // Ceder el control para que React renderice antes del siguiente paso pesado
-        await new Promise((r) => setTimeout(r, 100))
       }
 
       try {
-        // 1. Parsear el archivo client-side para validarlo
-        await updateProgress(15, `Parseando archivo XLSB (${(file.size / 1024).toFixed(0)} KB)...`)
-        const parsed = await parseXLSBFile(file)
+        const fileMB = (file.size / 1024 / 1024).toFixed(2)
+        const fileKB = (file.size / 1024).toFixed(0)
+
+        // 1. Parsear el archivo usando Web Worker (no bloquea el hilo)
+        updateProgress(5, `Preparando Web Worker para parsear ${fileMB} MB...`)
+
+        const parsed = await parseXLSBFileWithWorker(file, (p) => {
+          // El worker reporta progreso 0-90, escalamos a 5-50
+          const scaledPct = 5 + Math.round(p.pct * 0.5)
+          const detail = p.detail ? ` (${p.detail})` : ''
+          updateProgress(scaledPct, p.stage + detail)
+        })
 
         if (parsed.hojas.length === 0) {
           throw new Error('El archivo no contiene hojas con datos válidos.')
         }
 
         // 2. Detectar columnas
-        await updateProgress(30, 'Detectando columnas automáticamente...')
+        updateProgress(55, 'Detectando columnas automáticamente...')
+        await new Promise((r) => setTimeout(r, 50))
         const columnas = detectarColumnas(parsed.hojas)
         const { valida, errores } = validarEstructura(columnas)
 
@@ -81,7 +89,9 @@ export function ImportadorView() {
         }
 
         // 3. Procesar filas para validar
-        await updateProgress(45, `Procesando ${parsed.hojas.reduce((acc, h) => acc + h.filas.length, 0)} filas...`)
+        const totalFilas = parsed.hojas.reduce((acc, h) => acc + h.filas.length, 0)
+        updateProgress(60, `Procesando ${totalFilas} filas...`)
+        await new Promise((r) => setTimeout(r, 50))
         const { operaciones, errores: errFilas, duplicados } = procesarFilas(parsed.hojas, columnas)
 
         if (operaciones.length === 0) {
@@ -89,7 +99,8 @@ export function ImportadorView() {
         }
 
         // 4. Convertir archivo a base64
-        await updateProgress(60, 'Preparando archivo para subir a GitHub...')
+        updateProgress(70, `Convirtiendo ${fileMB} MB a base64...`)
+        await new Promise((r) => setTimeout(r, 50))
         const buffer = await file.arrayBuffer()
         const bytes = new Uint8Array(buffer)
         let binary = ''
@@ -102,7 +113,8 @@ export function ImportadorView() {
         const fileName = `data/raw/${new Date().toISOString().slice(0, 10)}_${file.name}`
 
         // 5. Crear metadata
-        await updateProgress(70, 'Subiendo archivo al repositorio...')
+        updateProgress(75, 'Preparando metadata...')
+        await new Promise((r) => setTimeout(r, 50))
         const metadata = {
           fileName: file.name,
           fileSize: file.size,
@@ -115,8 +127,8 @@ export function ImportadorView() {
           errores: errFilas.slice(0, 10),
         }
 
-        // 6. Subir via GitHub API
-        await updateProgress(85, 'Commit a GitHub...')
+        // 6. Subir via GitHub API (esto tarda varios segundos para archivos grandes)
+        updateProgress(80, `Subiendo ${fileMB} MB a GitHub (commit)...`)
         const { commitSha } = await commitFiles(
           [
             { path: fileName, content: base64 },
