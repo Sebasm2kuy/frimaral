@@ -1,0 +1,615 @@
+{
+  "competidor": {
+    "id": "cmrkslb6h01lsrde82rmp6k9e",
+    "nombre": "PROBIOMONT S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrksmcza1wo7rde8xy0ngnbd",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-06-16T09:58:59.999Z",
+      "periodo": "2026-06",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 15,
+      "pesoKg": 315,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:29.198Z",
+      "updatedAt": "2026-07-14T15:15:29.198Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksmb261tcsrde8qelbhdsu",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-05-20T10:09:59.999Z",
+      "periodo": "2026-05",
+      "producto": "SUBPRODUCTOS BOVINOS NO COMESTIBLES CONGELADOS  FROZEN INEDIBLE BEEF BY-PRODUCTS",
+      "cantidad": 25,
+      "pesoKg": 153,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:26.706Z",
+      "updatedAt": "2026-07-14T15:15:26.706Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrksm6t61l1urde89j5prmq7",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-02-27T11:51:00.000Z",
+      "periodo": "2026-02",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 74,
+      "pesoKg": 1554,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:21.197Z",
+      "updatedAt": "2026-07-14T15:15:21.197Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm6t61l1lrde8bsjkornr",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-02-27T11:10:00.000Z",
+      "periodo": "2026-02",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 80,
+      "pesoKg": 1680,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:21.197Z",
+      "updatedAt": "2026-07-14T15:15:21.197Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm2yq1dpgrde82va9pf2t",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrkslam900ghrde8bu35nqb6",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-12-30T11:35:59.999Z",
+      "periodo": "2025-12",
+      "producto": "SUERO FETAL BOVINO FILTRADO",
+      "cantidad": 1,
+      "pesoKg": 1,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:16.213Z",
+      "updatedAt": "2026-07-14T15:15:16.213Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrkslam900ghrde8bu35nqb6",
+        "nombre": "FRANCIA",
+        "pais": "FRANCIA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.490Z",
+        "updatedAt": "2026-07-14T15:14:39.490Z"
+      }
+    },
+    {
+      "id": "cmrksm2d81cb7rde8eqtss0mb",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-12-17T10:27:00.000Z",
+      "periodo": "2025-12",
+      "producto": "SUBPRODUCTOS BOVINOS NO COMESTIBLES CONGELADOS  FROZEN INEDIBLE BEEF BY-PRODUCTS",
+      "cantidad": 1,
+      "pesoKg": 20,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:15.442Z",
+      "updatedAt": "2026-07-14T15:15:15.442Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrkslxgj1412rde8fgd1huoy",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksl9zf000arde84pjk649e",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-10-24T12:20:00.000Z",
+      "periodo": "2025-10",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 34,
+      "pesoKg": 714,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:09.082Z",
+      "updatedAt": "2026-07-14T15:15:09.082Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksl9zf000arde84pjk649e",
+        "nombre": "BRASIL",
+        "pais": "BRASIL",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.667Z",
+        "updatedAt": "2026-07-14T15:14:38.667Z"
+      }
+    },
+    {
+      "id": "cmrkslxgj140vrde8c0tnrrop",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-10-24T12:04:59.999Z",
+      "periodo": "2025-10",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 1,
+      "pesoKg": 21,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:09.082Z",
+      "updatedAt": "2026-07-14T15:15:09.082Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslrbt0tyfrde86fk2e8c8",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-08-11T08:28:00.000Z",
+      "periodo": "2025-08",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 4,
+      "pesoKg": 84,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:01.128Z",
+      "updatedAt": "2026-07-14T15:15:01.128Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslnml0nmkrde8re5vatak",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-06-23T08:15:00.000Z",
+      "periodo": "2025-06",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 4,
+      "pesoKg": 84,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:56.342Z",
+      "updatedAt": "2026-07-14T15:14:56.342Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslkue0j6arde84u3j9eb7",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-05-22T10:52:59.999Z",
+      "periodo": "2025-05",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 179,
+      "pesoKg": 3759,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:52.732Z",
+      "updatedAt": "2026-07-14T15:14:52.732Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslehy070frde8qa2mwwmz",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-19T11:39:00.000Z",
+      "periodo": "2025-02",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 4,
+      "pesoKg": 84,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:44.511Z",
+      "updatedAt": "2026-07-14T15:14:44.511Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslbia028nrde8tnq3j1mz",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslb6h01lsrde82rmp6k9e",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-17T09:40:59.999Z",
+      "periodo": "2025-01",
+      "producto": "SUBPRODUCTO BOVINO NO COMESTIBLE",
+      "cantidad": 38,
+      "pesoKg": 798,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:40.616Z",
+      "updatedAt": "2026-07-14T15:14:40.616Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 1,
+      "peso": 798,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 1,
+      "peso": 84,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 1,
+      "peso": 3759,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 1,
+      "peso": 84,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 1,
+      "peso": 84,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 2,
+      "peso": 735,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 2,
+      "peso": 21,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 2,
+      "peso": 3234,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 1,
+      "peso": 153,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 1,
+      "peso": 315,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}

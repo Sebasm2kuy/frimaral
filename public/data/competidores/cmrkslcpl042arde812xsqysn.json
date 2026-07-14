@@ -1,0 +1,615 @@
+{
+  "competidor": {
+    "id": "cmrkslcpl042arde812xsqysn",
+    "nombre": "SUC. CARLOS SCHNECK S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrkslod60p89rde8r8ikg58q",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9zc0008rde81e04qja2",
+      "contenedorId": "cmrkslnx90oderde80p160jo5",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-07-04T10:20:00.000Z",
+      "periodo": "2025-07",
+      "producto": "LENGUAS BOVINAS MADURADAS CONGELADAS  FROZEN MATURATED BOVINES TONGUES",
+      "cantidad": 138,
+      "pesoKg": 1337,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:57.292Z",
+      "updatedAt": "2026-07-14T15:14:57.292Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9zc0008rde81e04qja2",
+        "nombre": "JAPON",
+        "pais": "JAPON",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.665Z",
+        "updatedAt": "2026-07-14T15:14:38.665Z"
+      }
+    },
+    {
+      "id": "cmrkslnmm0noqrde8zjdyqnlg",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksleec06oqrde89l12dw1f",
+      "contenedorId": "cmrksln5l0n5orde8o16navn4",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-06-24T07:00:00.000Z",
+      "periodo": "2025-06",
+      "producto": "HAMBURGUESAS",
+      "cantidad": 1000,
+      "pesoKg": 7200,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:56.342Z",
+      "updatedAt": "2026-07-14T15:14:56.342Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksleec06oqrde89l12dw1f",
+        "nombre": "CUBA",
+        "pais": "CUBA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:44.389Z",
+        "updatedAt": "2026-07-14T15:14:44.389Z"
+      }
+    },
+    {
+      "id": "cmrksljq40gvfrde8xzpb9pbe",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": "cmrksljhe0g8prde8mk7m87mu",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-05-07T13:07:59.999Z",
+      "periodo": "2025-05",
+      "producto": "CARNE BOVINA CON HUESO CONGELADA  FROZEN BONE IN BEEF",
+      "cantidad": 290,
+      "pesoKg": 4379,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:51.281Z",
+      "updatedAt": "2026-07-14T15:14:51.281Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrkslhw60de7rde8l4g1itg4",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": "cmrkslhqg0cp1rde8pl4dzacn",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-04-10T13:00:00.000Z",
+      "periodo": "2025-04",
+      "producto": "CARNE BOVINA CON HUESO CONGELADA  FROZEN BONE IN BEEF",
+      "cantidad": 112,
+      "pesoKg": 8214,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:48.905Z",
+      "updatedAt": "2026-07-14T15:14:48.905Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrkslh700c2zrde8uc5uzxlj",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksla0v0013rde8zgdspxce",
+      "contenedorId": "cmrkslgwq0bfjrde81il9uu6g",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-03-31T10:59:59.999Z",
+      "periodo": "2025-03",
+      "producto": "CARNE BOVINA DESOSADA MADURADA",
+      "cantidad": 1,
+      "pesoKg": 9,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:48.000Z",
+      "updatedAt": "2026-07-14T15:14:48.000Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksla0v0013rde8zgdspxce",
+        "nombre": "ESPAÑA",
+        "pais": "ESPAÑA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.719Z",
+        "updatedAt": "2026-07-14T15:14:38.719Z"
+      }
+    },
+    {
+      "id": "cmrkslgh90amzrde80yvlzzri",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": "cmrkslg0f0a3grde8q8ctz7aw",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-03-19T14:26:00.000Z",
+      "periodo": "2025-03",
+      "producto": "SUBPRODUCTOS BOVINOS COMESTIBLES CONGELADOS  FROZEN EDIBLE BEEF BY-PRODUCTS",
+      "cantidad": 97,
+      "pesoKg": 2463,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:47.077Z",
+      "updatedAt": "2026-07-14T15:14:47.077Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrkslfs509mdrde88d6v7ghp",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9zg000brde8xlblured",
+      "contenedorId": "cmrkslfgy08zprde8bq5zr482",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-03-12T12:29:59.999Z",
+      "periodo": "2025-03",
+      "producto": "CARNE BOVINA CON HUESO CONGELADA  FROZEN BONE IN BEEF",
+      "cantidad": 142,
+      "pesoKg": 9765,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:46.171Z",
+      "updatedAt": "2026-07-14T15:14:46.171Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9zg000brde8xlblured",
+        "nombre": "CHINA",
+        "pais": "CHINA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.669Z",
+        "updatedAt": "2026-07-14T15:14:38.669Z"
+      }
+    },
+    {
+      "id": "cmrkslf28080frde82ocfdfvv",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-25T15:04:59.999Z",
+      "periodo": "2025-02",
+      "producto": "SANGRE",
+      "cantidad": 3,
+      "pesoKg": 2,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:45.244Z",
+      "updatedAt": "2026-07-14T15:14:45.244Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslf2707zlrde8p3jeixmc",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9z90006rde8v9spkh5v",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-25T12:47:00.000Z",
+      "periodo": "2025-02",
+      "producto": "SUBPRODUCTO BOVINO COMESTIBLE",
+      "cantidad": 15,
+      "pesoKg": 1350,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:45.244Z",
+      "updatedAt": "2026-07-14T15:14:45.244Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9z90006rde8v9spkh5v",
+        "nombre": "TERCEROS PAISES SÓLO A DEPÓSITOS",
+        "pais": "TERCEROS PAISES SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.662Z",
+        "updatedAt": "2026-07-14T15:14:38.662Z"
+      }
+    },
+    {
+      "id": "cmrkslei507ewrde8tyf5oxd3",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksleec06oqrde89l12dw1f",
+      "contenedorId": "cmrksleed06orrde8wburyegc",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-24T10:00:00.000Z",
+      "periodo": "2025-02",
+      "producto": "HAMBURGUESAS",
+      "cantidad": 2145,
+      "pesoKg": 15444,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:44.511Z",
+      "updatedAt": "2026-07-14T15:14:44.511Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksleec06oqrde89l12dw1f",
+        "nombre": "CUBA",
+        "pais": "CUBA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:44.389Z",
+        "updatedAt": "2026-07-14T15:14:44.389Z"
+      }
+    },
+    {
+      "id": "cmrkslei2078krde87eqx4vre",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-21T11:30:00.000Z",
+      "periodo": "2025-02",
+      "producto": "SANGRE",
+      "cantidad": 9,
+      "pesoKg": 9,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:44.511Z",
+      "updatedAt": "2026-07-14T15:14:44.511Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslei20789rde8x706tqkw",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrksl9z90006rde8v9spkh5v",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-21T10:30:00.000Z",
+      "periodo": "2025-02",
+      "producto": "SUBPRODUCTO BOVINO COMESTIBLE",
+      "cantidad": 12,
+      "pesoKg": 1200,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:44.511Z",
+      "updatedAt": "2026-07-14T15:14:44.511Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrksl9z90006rde8v9spkh5v",
+        "nombre": "TERCEROS PAISES SÓLO A DEPÓSITOS",
+        "pais": "TERCEROS PAISES SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.662Z",
+        "updatedAt": "2026-07-14T15:14:38.662Z"
+      }
+    },
+    {
+      "id": "cmrksld3h04p8rde826tqqihj",
+      "productorId": "cmrkslcpk0429rde8bc3xthqy",
+      "certificadorId": null,
+      "competidorId": "cmrkslcpl042arde812xsqysn",
+      "destinoId": "cmrkslamo00gxrde8p81x5hi8",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-04T13:30:00.000Z",
+      "periodo": "2025-02",
+      "producto": "PLACENTA BOVINA",
+      "cantidad": 459,
+      "pesoKg": 9153,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:42.687Z",
+      "updatedAt": "2026-07-14T15:14:42.687Z",
+      "productor": {
+        "id": "cmrkslcpk0429rde8bc3xthqy",
+        "nombre": "SUC. CARLOS SCHNECK S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:42.201Z",
+        "updatedAt": "2026-07-14T15:14:42.201Z"
+      },
+      "destino": {
+        "id": "cmrkslamo00gxrde8p81x5hi8",
+        "nombre": "PROV MAR MALASIA",
+        "pais": "PROV MAR MALASIA",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.504Z",
+        "updatedAt": "2026-07-14T15:14:39.504Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 6,
+      "peso": 27158,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 3,
+      "peso": 12237,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 1,
+      "peso": 8214,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 1,
+      "peso": 4379,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 1,
+      "peso": 7200,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 1,
+      "peso": 1337,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}

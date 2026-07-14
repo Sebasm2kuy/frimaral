@@ -1,0 +1,245 @@
+{
+  "competidor": {
+    "id": "cmrkslx7r13j7rde8eks5ejnm",
+    "nombre": "MONTESERA S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrksm9wp1qh3rde8xq666ztn",
+      "productorId": "cmrkslx7q13j6rde8uvdeioc3",
+      "certificadorId": null,
+      "competidorId": "cmrkslx7r13j7rde8eks5ejnm",
+      "destinoId": "cmrksla5m003wrde8gbnqpkyc",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-04-17T10:05:00.000Z",
+      "periodo": "2026-04",
+      "producto": "SUERO FETAL BOVINO FILTRADO",
+      "cantidad": 1,
+      "pesoKg": 5,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:25.220Z",
+      "updatedAt": "2026-07-14T15:15:25.220Z",
+      "productor": {
+        "id": "cmrkslx7q13j6rde8uvdeioc3",
+        "nombre": "MONTESERA S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:15:08.774Z",
+        "updatedAt": "2026-07-14T15:15:08.774Z"
+      },
+      "destino": {
+        "id": "cmrksla5m003wrde8gbnqpkyc",
+        "nombre": "REINO UNIDO",
+        "pais": "REINO UNIDO",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.891Z",
+        "updatedAt": "2026-07-14T15:14:38.891Z"
+      }
+    },
+    {
+      "id": "cmrksm4x01hf4rde8v4vk37j8",
+      "productorId": "cmrkslb6g01lrrde8s0jqm5of",
+      "certificadorId": null,
+      "competidorId": "cmrkslx7r13j7rde8eks5ejnm",
+      "destinoId": "cmrksla5q0040rde81mdgkryj",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-02-02T10:05:00.000Z",
+      "periodo": "2026-02",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 34,
+      "pesoKg": 714,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:18.743Z",
+      "updatedAt": "2026-07-14T15:15:18.743Z",
+      "productor": {
+        "id": "cmrkslb6g01lrrde8s0jqm5of",
+        "nombre": "PROBIOMONT S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:40.216Z",
+        "updatedAt": "2026-07-14T15:14:40.216Z"
+      },
+      "destino": {
+        "id": "cmrksla5q0040rde81mdgkryj",
+        "nombre": "UNION EUROPEA SÓLO A DEPÓSITO",
+        "pais": "UNION EUROPEA SÓLO A DEPÓSITO",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.894Z",
+        "updatedAt": "2026-07-14T15:14:38.894Z"
+      }
+    },
+    {
+      "id": "cmrkslxgm1469rde8mhthpnh3",
+      "productorId": "cmrkslx7q13j6rde8uvdeioc3",
+      "certificadorId": null,
+      "competidorId": "cmrkslx7r13j7rde8eks5ejnm",
+      "destinoId": "cmrksl9zf000arde84pjk649e",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-10-27T09:11:59.999Z",
+      "periodo": "2025-10",
+      "producto": "SUERO FETAL BOVINO FILTRADO",
+      "cantidad": 1,
+      "pesoKg": 1,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:09.082Z",
+      "updatedAt": "2026-07-14T15:15:09.082Z",
+      "productor": {
+        "id": "cmrkslx7q13j6rde8uvdeioc3",
+        "nombre": "MONTESERA S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:15:08.774Z",
+        "updatedAt": "2026-07-14T15:15:08.774Z"
+      },
+      "destino": {
+        "id": "cmrksl9zf000arde84pjk649e",
+        "nombre": "BRASIL",
+        "pais": "BRASIL",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.667Z",
+        "updatedAt": "2026-07-14T15:14:38.667Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 1,
+      "peso": 1,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 1,
+      "peso": 714,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 1,
+      "peso": 5,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}

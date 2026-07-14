@@ -1,0 +1,245 @@
+{
+  "competidor": {
+    "id": "cmrksloz30pqkrde82d08p1n8",
+    "nombre": "FANAPHRU S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrksmdrb1xoerde8g3xe3b4s",
+      "productorId": "cmrksloz20pqjrde84dviu493",
+      "certificadorId": null,
+      "competidorId": "cmrksloz30pqkrde82d08p1n8",
+      "destinoId": "cmrkslb5w01larde82j7zljow",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-06-23T12:36:59.999Z",
+      "periodo": "2026-06",
+      "producto": "HUEVOS",
+      "cantidad": 72,
+      "pesoKg": 1404,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:30.211Z",
+      "updatedAt": "2026-07-14T15:15:30.211Z",
+      "productor": {
+        "id": "cmrksloz20pqjrde84dviu493",
+        "nombre": "FANAPHRU S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:58.095Z",
+        "updatedAt": "2026-07-14T15:14:58.095Z"
+      },
+      "destino": {
+        "id": "cmrkslb5w01larde82j7zljow",
+        "nombre": "ISLAS MALVINAS",
+        "pais": "ISLAS MALVINAS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:40.196Z",
+        "updatedAt": "2026-07-14T15:14:40.196Z"
+      }
+    },
+    {
+      "id": "cmrksm9wo1qh1rde87dmdnbgu",
+      "productorId": "cmrksloz20pqjrde84dviu493",
+      "certificadorId": null,
+      "competidorId": "cmrksloz30pqkrde82d08p1n8",
+      "destinoId": "cmrkslb5w01larde82j7zljow",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-04-20T10:14:00.000Z",
+      "periodo": "2026-04",
+      "producto": "HUEVOS",
+      "cantidad": 72,
+      "pesoKg": 1404,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:25.220Z",
+      "updatedAt": "2026-07-14T15:15:25.220Z",
+      "productor": {
+        "id": "cmrksloz20pqjrde84dviu493",
+        "nombre": "FANAPHRU S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:58.095Z",
+        "updatedAt": "2026-07-14T15:14:58.095Z"
+      },
+      "destino": {
+        "id": "cmrkslb5w01larde82j7zljow",
+        "nombre": "ISLAS MALVINAS",
+        "pais": "ISLAS MALVINAS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:40.196Z",
+        "updatedAt": "2026-07-14T15:14:40.196Z"
+      }
+    },
+    {
+      "id": "cmrkslp4x0qfyrde85a6yo3kp",
+      "productorId": "cmrksloz20pqjrde84dviu493",
+      "certificadorId": null,
+      "competidorId": "cmrksloz30pqkrde82d08p1n8",
+      "destinoId": "cmrkslb5w01larde82j7zljow",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-07-15T09:38:59.999Z",
+      "periodo": "2025-07",
+      "producto": "HUEVOS",
+      "cantidad": 72,
+      "pesoKg": 1454,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:58.291Z",
+      "updatedAt": "2026-07-14T15:14:58.291Z",
+      "productor": {
+        "id": "cmrksloz20pqjrde84dviu493",
+        "nombre": "FANAPHRU S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:58.095Z",
+        "updatedAt": "2026-07-14T15:14:58.095Z"
+      },
+      "destino": {
+        "id": "cmrkslb5w01larde82j7zljow",
+        "nombre": "ISLAS MALVINAS",
+        "pais": "ISLAS MALVINAS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:40.196Z",
+        "updatedAt": "2026-07-14T15:14:40.196Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 1,
+      "peso": 1454,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 1,
+      "peso": 1404,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 1,
+      "peso": 1404,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}

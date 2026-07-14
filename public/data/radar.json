@@ -1,34 +1,41 @@
 {
-  "periodo": "2024-12",
-  "fechaGeneracion": "2026-07-13T16:10:16.646Z",
+  "periodo": "2026-07",
+  "fechaGeneracion": "2026-07-14T15:15:38.617Z",
   "conclusiones": [
     {
       "tipo": "COMPARTIDO",
       "icono": "alert-triangle",
-      "titulo": "5 productor(es) comenzaron a operar con un competidor",
-      "mensaje": "LAS MORAS SA, MERCEDES SA, DURAZNO SA, SAN JACINTO SA, FRIBOY SA ahora comparten operaciones entre Caliral y otros depósitos. Riesgo de migración creciente.",
+      "titulo": "1 productor(es) comenzaron a operar con un competidor",
+      "mensaje": "FRIGORÍFICO SAN JACINTO NIREA S.A. ahora comparten operaciones entre Caliral y otros depósitos. Riesgo de migración creciente.",
       "severidad": "WARNING",
       "datos": {
         "productores": [
           {
-            "id": "cmrjb8unu000bwt0n3u6m8ucx",
-            "nombre": "LAS MORAS SA"
+            "id": "cmrksla8m006arde8wcum4th8",
+            "nombre": "FRIGORÍFICO SAN JACINTO NIREA S.A."
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "DISMINUCION",
+      "icono": "trending-down",
+      "titulo": "3 productor(es) redujeron operaciones",
+      "mensaje": "COLTIREY S.A., FRIGORÍFICO SAN JACINTO NIREA S.A., PROBIOMONT S.A. disminuyeron significativamente sus operaciones con Caliral. Se requiere contacto comercial inmediato.",
+      "severidad": "WARNING",
+      "datos": {
+        "productores": [
+          {
+            "id": "cmrksla710058rde8x5hhlmjn",
+            "nombre": "COLTIREY S.A."
           },
           {
-            "id": "cmrjb8unv000dwt0ndbpp5t33",
-            "nombre": "MERCEDES SA"
+            "id": "cmrksla8m006arde8wcum4th8",
+            "nombre": "FRIGORÍFICO SAN JACINTO NIREA S.A."
           },
           {
-            "id": "cmrjb8uny000gwt0nl0m9wcqf",
-            "nombre": "DURAZNO SA"
-          },
-          {
-            "id": "cmrjb8unz000lwt0n3ljo54cs",
-            "nombre": "SAN JACINTO SA"
-          },
-          {
-            "id": "cmrjb8unu000cwt0n16sltwwj",
-            "nombre": "FRIBOY SA"
+            "id": "cmrkslb6g01lrrde8s0jqm5of",
+            "nombre": "PROBIOMONT S.A."
           }
         ]
       }
@@ -36,135 +43,163 @@
     {
       "tipo": "PERDIDA",
       "icono": "x-circle",
-      "titulo": "2 cliente(s) abandonaron Caliral",
-      "mensaje": "CASA BLANCA SA, SANTA ELENA SA dejaron de operar con Caliral en el período actual. Investigar migración a competencia.",
+      "titulo": "4 cliente(s) abandonaron Caliral",
+      "mensaje": "FRIGORÍFICO TACUAREMBÓ S.A., COLTIREY S.A., FRIGORÍFICO MATADERO PANDO ONTILCOR S.A., ARTICA BIOTECH dejaron de operar con Caliral en el período actual. Investigar migración a competencia.",
       "severidad": "CRITICAL",
       "datos": {
         "productores": [
           {
-            "id": "cmrjb8unz000kwt0na6ai57y2",
-            "nombre": "CASA BLANCA SA"
+            "id": "cmrksla6v0050rde89155l34l",
+            "nombre": "FRIGORÍFICO TACUAREMBÓ S.A."
           },
           {
-            "id": "cmrjb8uo0000nwt0n74apbuhx",
-            "nombre": "SANTA ELENA SA"
+            "id": "cmrksla710058rde8x5hhlmjn",
+            "nombre": "COLTIREY S.A."
+          },
+          {
+            "id": "cmrkslabd0088rde8j8x315ap",
+            "nombre": "FRIGORÍFICO MATADERO PANDO ONTILCOR S.A."
+          },
+          {
+            "id": "cmrksld1l049vrde874zr6f9p",
+            "nombre": "ARTICA BIOTECH"
           }
         ]
       }
     },
     {
+      "tipo": "RIESGO",
+      "icono": "alert-circle",
+      "titulo": "1 cliente(s) con riesgo de abandono",
+      "mensaje": "Hay 1 productor(es) con score de riesgo elevado. Se recomienda plan de retención comercial focalizado.",
+      "severidad": "WARNING"
+    },
+    {
       "tipo": "OPORTUNIDAD",
       "icono": "pie-chart",
-      "titulo": "Participación de Caliral: 66.7%",
-      "mensaje": "Caliral participa en 66.7% de las operaciones del período. Por encima del 50%: posición de liderazgo en el mercado.",
-      "severidad": "INFO"
+      "titulo": "Participación de Caliral: 0.3%",
+      "mensaje": "Caliral participa en 0.3% de las operaciones del período. Por debajo del 50%: la competencia domina el mercado.",
+      "severidad": "WARNING"
     }
   ],
   "metricas": {
-    "totalProductores": 15,
-    "productoresActivos": 12,
-    "productoresExclusivos": 7,
-    "productoresCompartidos": 5,
-    "productoresPerdidos": 2,
+    "totalProductores": 46,
+    "productoresActivos": 1,
+    "productoresExclusivos": 0,
+    "productoresCompartidos": 1,
+    "productoresPerdidos": 4,
     "productoresRecuperados": 0,
     "productoresNuevos": 0,
-    "totalOperacionesCaliral": 60,
-    "totalPesoCaliral": 1787272.607340501,
-    "participacionCaliral": 66.66666666666666,
-    "competidoresActivos": 5,
-    "clientesEnRiesgo": 0
+    "totalOperacionesCaliral": 1,
+    "totalPesoCaliral": 19872,
+    "participacionCaliral": 0.2631578947368421,
+    "competidoresActivos": 28,
+    "clientesEnRiesgo": 1
   },
   "topCompetidores": [
     {
       "competidor": {
-        "id": "cmrjb8unq0004wt0n7tk3d0vj",
-        "nombre": "FRIOPORT",
-        "cuit": "21-11111111-1",
-        "pais": "Uruguay",
+        "id": "cmrksla6w0051rde8kqigl2pg",
+        "nombre": "FRIGORÍFICO TACUAREMBÓ S.A.",
+        "cuit": null,
+        "pais": null,
         "activo": true,
-        "createdAt": "2026-07-13T14:21:19.286Z",
-        "updatedAt": "2026-07-13T14:21:19.286Z",
-        "totalOperaciones": 17,
-        "totalPeso": 566903.3384540334,
-        "totalClientes": 4,
-        "crecimiento": 0,
+        "createdAt": "2026-07-14T15:14:38.936Z",
+        "updatedAt": "2026-07-14T15:14:38.936Z",
+        "totalOperaciones": 44,
+        "totalPeso": 536085,
+        "totalClientes": 1,
+        "crecimiento": -88.4514435695538,
         "captaciones": 0
       },
-      "crecimiento": 0,
+      "crecimiento": -88.4514435695538,
       "captaciones": 0
     },
     {
       "competidor": {
-        "id": "cmrjb8unr0009wt0nog6naakz",
-        "nombre": "FRIPUR",
-        "cuit": "21-44444444-4",
-        "pais": "Uruguay",
+        "id": "cmrksl9zn000erde8nbw9neik",
+        "nombre": "FRIGORÍFICO LAS PIEDRAS S.A.",
+        "cuit": null,
+        "pais": null,
         "activo": true,
-        "createdAt": "2026-07-13T14:21:19.288Z",
-        "updatedAt": "2026-07-13T14:21:19.288Z",
-        "totalOperaciones": 5,
-        "totalPeso": 207499.4594475184,
+        "createdAt": "2026-07-14T15:14:38.676Z",
+        "updatedAt": "2026-07-14T15:14:38.676Z",
+        "totalOperaciones": 43,
+        "totalPeso": 549844,
         "totalClientes": 1,
-        "crecimiento": 0,
+        "crecimiento": -85.99348534201955,
         "captaciones": 0
       },
-      "crecimiento": 0,
+      "crecimiento": -85.99348534201955,
       "captaciones": 0
     },
     {
       "competidor": {
-        "id": "cmrjb8unq0006wt0n95glwrm9",
-        "nombre": "FRIGONAL",
-        "cuit": "21-66666666-6",
-        "pais": "Uruguay",
+        "id": "cmrksla7y005lrde8y66cmpcu",
+        "nombre": "FRIGORÍFICO CANELONES S.A.",
+        "cuit": null,
+        "pais": null,
         "activo": true,
-        "createdAt": "2026-07-13T14:21:19.287Z",
-        "updatedAt": "2026-07-13T14:21:19.287Z",
-        "totalOperaciones": 4,
-        "totalPeso": 89010.59622212374,
+        "createdAt": "2026-07-14T15:14:38.974Z",
+        "updatedAt": "2026-07-14T15:14:38.974Z",
+        "totalOperaciones": 36,
+        "totalPeso": 472516,
         "totalClientes": 1,
-        "crecimiento": 0,
+        "crecimiento": -85.06224066390041,
         "captaciones": 0
       },
-      "crecimiento": 0,
+      "crecimiento": -85.06224066390041,
       "captaciones": 0
     },
     {
       "competidor": {
-        "id": "cmrjb8unq0005wt0nxo3ugcdi",
-        "nombre": "LORSUAL",
-        "cuit": "21-55555555-5",
-        "pais": "Uruguay",
+        "id": "cmrksla65004brde8ju93o4g2",
+        "nombre": "FRIGORÍFICO PUL PULSA S.A.",
+        "cuit": null,
+        "pais": null,
         "activo": true,
-        "createdAt": "2026-07-13T14:21:19.287Z",
-        "updatedAt": "2026-07-13T14:21:19.287Z",
-        "totalOperaciones": 2,
-        "totalPeso": 66144.80201793411,
+        "createdAt": "2026-07-14T15:14:38.910Z",
+        "updatedAt": "2026-07-14T15:14:38.910Z",
+        "totalOperaciones": 35,
+        "totalPeso": 324591,
         "totalClientes": 1,
-        "crecimiento": 0,
+        "crecimiento": -88.59934853420195,
         "captaciones": 0
       },
-      "crecimiento": 0,
+      "crecimiento": -88.59934853420195,
       "captaciones": 0
     },
     {
       "competidor": {
-        "id": "cmrjb8unr0007wt0np9m5lx45",
-        "nombre": "ROSARIO INDUSTRIAL",
-        "cuit": "21-77777777-7",
-        "pais": "Uruguay",
+        "id": "cmrkslez907x4rde8s09a0a7v",
+        "nombre": "BREEDERS  PACKERS URUGUAY S.A.",
+        "cuit": null,
+        "pais": null,
         "activo": true,
-        "createdAt": "2026-07-13T14:21:19.287Z",
-        "updatedAt": "2026-07-13T14:21:19.287Z",
-        "totalOperaciones": 2,
-        "totalPeso": 76277.15162550527,
+        "createdAt": "2026-07-14T15:14:45.141Z",
+        "updatedAt": "2026-07-14T15:14:45.141Z",
+        "totalOperaciones": 30,
+        "totalPeso": 423262,
         "totalClientes": 1,
-        "crecimiento": 0,
+        "crecimiento": -87.55186721991701,
         "captaciones": 0
       },
-      "crecimiento": 0,
+      "crecimiento": -87.55186721991701,
       "captaciones": 0
     }
   ],
-  "clientesEnRiesgo": []
+  "clientesEnRiesgo": [
+    {
+      "productor": {
+        "id": "cmrksla710058rde8x5hhlmjn",
+        "nombre": "COLTIREY S.A.",
+        "estado": "PERDIDO",
+        "riskScore": 60,
+        "riskLevel": "ALTO"
+      },
+      "riskScore": 60,
+      "riskLevel": "ALTO",
+      "motivo": "Operaciones con Caliral disminuyeron 100% vs período anterior Migró de Caliral a un competidor"
+    }
+  ]
 }

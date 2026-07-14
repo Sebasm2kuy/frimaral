@@ -9,7 +9,7 @@ import { getPeriodos } from '../src/modules/intelligence/engine'
 import * as fs from 'fs'
 import * as path from 'path'
 
-async function main() {
+export async function exportStaticData() {
   const outputDir = path.join(process.cwd(), 'public', 'data')
   fs.mkdirSync(outputDir, { recursive: true })
 
@@ -119,12 +119,19 @@ async function main() {
   console.log(`   • search-index.json`)
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((e) => {
-    console.error('❌ Error:', e)
-    process.exit(1)
-  })
-  .finally(async () => {
-    await db.$disconnect()
-  })
+// Si se ejecuta directamente, correr la función
+async function main() {
+  await exportStaticData()
+}
+
+if (import.meta.main || require.main === module) {
+  main()
+    .then(() => process.exit(0))
+    .catch((e) => {
+      console.error('❌ Error:', e)
+      process.exit(1)
+    })
+    .finally(async () => {
+      await db.$disconnect()
+    })
+}

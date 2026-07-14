@@ -1,0 +1,504 @@
+{
+  "competidor": {
+    "id": "cmrksldpq05fvrde8u8l4q94f",
+    "nombre": "MVDMART S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrksmdrg1xzcrde8xj54zpch",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-06-26T11:15:00.000Z",
+      "periodo": "2026-06",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 342,
+      "pesoKg": 577,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:30.211Z",
+      "updatedAt": "2026-07-14T15:15:30.211Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm9ws1qp7rde8c5bbmv9i",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-04-22T15:20:00.000Z",
+      "periodo": "2026-04",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 511,
+      "pesoKg": 521,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:25.220Z",
+      "updatedAt": "2026-07-14T15:15:25.220Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm6t91l6prde8iju8y7yk",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-03-02T14:30:00.000Z",
+      "periodo": "2026-03",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 625,
+      "pesoKg": 637,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:21.197Z",
+      "updatedAt": "2026-07-14T15:15:21.197Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm6t91l6rrde8e7kmj5s4",
+      "productorId": "cmrksla6v0050rde89155l34l",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-03-02T14:30:00.000Z",
+      "periodo": "2026-03",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 120,
+      "pesoKg": 720,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:21.197Z",
+      "updatedAt": "2026-07-14T15:15:21.197Z",
+      "productor": {
+        "id": "cmrksla6v0050rde89155l34l",
+        "nombre": "FRIGORÍFICO TACUAREMBÓ S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:38.935Z",
+        "updatedAt": "2026-07-14T15:14:38.935Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm5l31i84rde86aidqg69",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2026-02-05T13:09:59.999Z",
+      "periodo": "2026-02",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 273,
+      "pesoKg": 278,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:19.616Z",
+      "updatedAt": "2026-07-14T15:15:19.616Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksm0gz18xurde8pek5v01n",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-11-26T09:15:00.000Z",
+      "periodo": "2025-11",
+      "producto": "SUERO BOVINO",
+      "cantidad": 358,
+      "pesoKg": 365,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:12.982Z",
+      "updatedAt": "2026-07-14T15:15:12.982Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslw6811sgrde819beh8gg",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-10-03T12:45:00.000Z",
+      "periodo": "2025-10",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 345,
+      "pesoKg": 352,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:07.413Z",
+      "updatedAt": "2026-07-14T15:15:07.413Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslss00w5trde8z39ch52f",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-08-26T13:30:00.000Z",
+      "periodo": "2025-08",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 1120,
+      "pesoKg": 1142,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:15:03.012Z",
+      "updatedAt": "2026-07-14T15:15:03.012Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrkslku80itarde8ncey7061",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-05-20T13:09:59.999Z",
+      "periodo": "2025-05",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 1135,
+      "pesoKg": 1021,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:52.732Z",
+      "updatedAt": "2026-07-14T15:14:52.732Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    },
+    {
+      "id": "cmrksldvu065zrde8jvoqit1m",
+      "productorId": "cmrksldpp05furde8fi415yfn",
+      "certificadorId": null,
+      "competidorId": "cmrksldpq05fvrde8u8l4q94f",
+      "destinoId": "cmrksla80005orde8ljhk7ct2",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-02-18T13:47:00.000Z",
+      "periodo": "2025-02",
+      "producto": "SUERO FETAL BOVINO",
+      "cantidad": 1474,
+      "pesoKg": 752,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:43.708Z",
+      "updatedAt": "2026-07-14T15:14:43.708Z",
+      "productor": {
+        "id": "cmrksldpp05furde8fi415yfn",
+        "nombre": "MVDMART S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:43.502Z",
+        "updatedAt": "2026-07-14T15:14:43.502Z"
+      },
+      "destino": {
+        "id": "cmrksla80005orde8ljhk7ct2",
+        "nombre": "CHINA SÓLO A DEPÓSITOS",
+        "pais": "CHINA SÓLO A DEPÓSITOS",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.977Z",
+        "updatedAt": "2026-07-14T15:14:38.977Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 1,
+      "peso": 752,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 1,
+      "peso": 1021,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 1,
+      "peso": 1142,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 1,
+      "peso": 352,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 1,
+      "peso": 365,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 1,
+      "peso": 278,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 2,
+      "peso": 1357,
+      "clientes": 2
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 1,
+      "peso": 521,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 1,
+      "peso": 577,
+      "clientes": 1
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}

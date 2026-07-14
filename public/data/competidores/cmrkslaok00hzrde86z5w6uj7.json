@@ -1,0 +1,541 @@
+{
+  "competidor": {
+    "id": "cmrkslaok00hzrde86z5w6uj7",
+    "nombre": "TILEO S.A.",
+    "cuit": null,
+    "pais": null,
+    "activo": true
+  },
+  "operaciones": [
+    {
+      "id": "cmrkslod60p8qrde81ltfnulf",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrkslaez00bcrde8jx95h5le",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-07-04T11:41:00.000Z",
+      "periodo": "2025-07",
+      "producto": "HARINA DE PLUMAS DE AVES",
+      "cantidad": 2,
+      "pesoKg": 2,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:57.292Z",
+      "updatedAt": "2026-07-14T15:14:57.292Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrkslaez00bcrde8jx95h5le",
+        "nombre": "CHILE",
+        "pais": "CHILE",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.227Z",
+        "updatedAt": "2026-07-14T15:14:39.227Z"
+      }
+    },
+    {
+      "id": "cmrkslnmo0nssrde8ry0jw4oz",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrkslaez00bcrde8jx95h5le",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-06-24T16:39:00.000Z",
+      "periodo": "2025-06",
+      "producto": "HARINA DE PLUMAS DE AVES",
+      "cantidad": 41,
+      "pesoKg": 26929,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:56.342Z",
+      "updatedAt": "2026-07-14T15:14:56.342Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrkslaez00bcrde8jx95h5le",
+        "nombre": "CHILE",
+        "pais": "CHILE",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.227Z",
+        "updatedAt": "2026-07-14T15:14:39.227Z"
+      }
+    },
+    {
+      "id": "cmrkslnmo0nsjrde8w4efaj3d",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrkslaez00bcrde8jx95h5le",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-06-24T15:06:00.000Z",
+      "periodo": "2025-06",
+      "producto": "HARINA DE PLUMAS DE AVES",
+      "cantidad": 45,
+      "pesoKg": 28038,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:56.342Z",
+      "updatedAt": "2026-07-14T15:14:56.342Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrkslaez00bcrde8jx95h5le",
+        "nombre": "CHILE",
+        "pais": "CHILE",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.227Z",
+        "updatedAt": "2026-07-14T15:14:39.227Z"
+      }
+    },
+    {
+      "id": "cmrkslj5a0fwerde8l6gl4zr1",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrkslaez00bcrde8jx95h5le",
+      "contenedorId": null,
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-04-30T15:49:00.000Z",
+      "periodo": "2025-04",
+      "producto": "HARINA DE PLUMAS DE AVES",
+      "cantidad": 1,
+      "pesoKg": 2,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:50.527Z",
+      "updatedAt": "2026-07-14T15:14:50.527Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrkslaez00bcrde8jx95h5le",
+        "nombre": "CHILE",
+        "pais": "CHILE",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:39.227Z",
+        "updatedAt": "2026-07-14T15:14:39.227Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017wrde822sa2uo9",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaou00i7rde84iixczgk",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T17:10:59.999Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 44,
+      "pesoKg": 24446,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017vrde8ujc717li",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaot00i6rde8w856n98a",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T17:01:00.000Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 44,
+      "pesoKg": 23526,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017trde84ho4hqgq",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaos00i5rde8f05s2kz7",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T16:52:59.999Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 40,
+      "pesoKg": 24400,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017rrde8lwwdrtqv",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaoq00i4rde82xariid1",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T16:45:00.000Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 44,
+      "pesoKg": 28046,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017prde8t8zvtfph",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaop00i3rde8tztft76a",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T16:34:59.999Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 43,
+      "pesoKg": 24946,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017orde853brldoq",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaop00i2rde8m6ksjkjw",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T16:21:00.000Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 43,
+      "pesoKg": 22653,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    },
+    {
+      "id": "cmrkslau6017mrde8s7gcmxjx",
+      "productorId": "cmrkslaok00hyrde8s0jlsgvf",
+      "certificadorId": null,
+      "competidorId": "cmrkslaok00hzrde86z5w6uj7",
+      "destinoId": "cmrksla430035rde8ljlhhvdc",
+      "contenedorId": "cmrkslaom00i0rde8myqaz0pm",
+      "importacionId": "cmrksl9z60003rde8f5zrkgr1",
+      "fecha": "2025-01-09T15:56:59.999Z",
+      "periodo": "2025-01",
+      "producto": "HARINA DE PLUMAS",
+      "cantidad": 42,
+      "pesoKg": 25698,
+      "valorUsd": 0,
+      "createdAt": "2026-07-14T15:14:39.741Z",
+      "updatedAt": "2026-07-14T15:14:39.741Z",
+      "productor": {
+        "id": "cmrkslaok00hyrde8s0jlsgvf",
+        "nombre": "TILEO S.A.",
+        "cuit": null,
+        "razonSocial": null,
+        "pais": "Uruguay",
+        "provincia": null,
+        "localidad": null,
+        "activo": true,
+        "createdAt": "2026-07-14T15:14:39.572Z",
+        "updatedAt": "2026-07-14T15:14:39.572Z"
+      },
+      "destino": {
+        "id": "cmrksla430035rde8ljlhhvdc",
+        "nombre": "VIETNAM",
+        "pais": "VIETNAM",
+        "region": null,
+        "createdAt": "2026-07-14T15:14:38.836Z",
+        "updatedAt": "2026-07-14T15:14:38.836Z"
+      }
+    }
+  ],
+  "clientes": [],
+  "captaciones": [],
+  "evolucion": [
+    {
+      "periodo": "2025-01",
+      "operaciones": 7,
+      "peso": 173715,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-04",
+      "operaciones": 1,
+      "peso": 2,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-06",
+      "operaciones": 2,
+      "peso": 54967,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-07",
+      "operaciones": 1,
+      "peso": 2,
+      "clientes": 1
+    },
+    {
+      "periodo": "2025-08",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-09",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-10",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-11",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2025-12",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-01",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-02",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-03",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-04",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-05",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-06",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    },
+    {
+      "periodo": "2026-07",
+      "operaciones": 0,
+      "peso": 0,
+      "clientes": 0
+    }
+  ],
+  "compartidos": [],
+  "exclusivos": [],
+  "totalClientes": 0,
+  "totalCompartidos": 0,
+  "totalExclusivos": 0
+}
