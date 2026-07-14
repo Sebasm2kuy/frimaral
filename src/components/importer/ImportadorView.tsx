@@ -27,6 +27,7 @@ export function ImportadorView() {
   const [dragOver, setDragOver] = useState(false)
   const [lastResult, setLastResult] = useState<any>(null)
   const [hasToken, setHasToken] = useState(typeof window !== 'undefined' && hasGitHubToken())
+  const [errorMsg, setErrorMsg] = useState<string | null>(null)
 
   const { data, refetch } = useApi<{ importaciones: Importacion[] }>(
     staticMode ? null : '/api/importaciones'
@@ -51,6 +52,7 @@ export function ImportadorView() {
       setUploading(true)
       setProgress(5)
       setProgressStage('Iniciando...')
+      setErrorMsg(null)
 
       // Helper para actualizar progreso y ceder el control a React
       const updateProgress = async (pct: number, stage: string) => {
@@ -148,8 +150,11 @@ Será procesado automáticamente por GitHub Action.`
         toast.success(`Archivo subido. Se procesará automáticamente en ~2 minutos.`)
         setHasToken(true)
       } catch (err: any) {
-        toast.error(err.message || 'Error al subir archivo')
-        setProgressStage('Error')
+        const msg = err.message || 'Error al subir archivo'
+        console.error('❌ Error en importación:', err)
+        setErrorMsg(msg)
+        toast.error(msg)
+        setProgressStage('Error: ' + msg.substring(0, 100))
       } finally {
         setUploading(false)
         setTimeout(() => {
@@ -340,6 +345,49 @@ Será procesado automáticamente por GitHub Action.`
           </div>
         </Card>
       )}
+
+      {/* Mensaje de error visible */}
+      <AnimatePresence>
+        {errorMsg && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+          >
+            <Card className="p-4 border-red-500/30 bg-red-500/5">
+              <div className="flex gap-3">
+                <XCircle className="size-5 text-red-400 shrink-0 mt-0.5" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm mb-1 text-red-400">Error</h3>
+                  <p className="text-sm text-muted-foreground">{errorMsg}</p>
+                  <div className="mt-3 flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => {
+                        setErrorMsg(null)
+                        setProgress(0)
+                        setProgressStage('')
+                      }}
+                    >
+                      Cerrar
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => {
+                        window.location.reload()
+                      }}
+                    >
+                      Recargar página (Ctrl+Shift+R)
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Resultado última subida */}
       <AnimatePresence>

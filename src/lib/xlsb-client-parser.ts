@@ -37,31 +37,45 @@ const COLUMN_ALIASES: Record<string, string[]> = {
 }
 
 export async function parseXLSBFile(file: File): Promise<ParsedFile> {
-  // Leer archivo como ArrayBuffer
+  // Leer archivo como ArrayBuffer (una sola vez)
   const buffer = await file.arrayBuffer()
 
   // Ceder el control al browser para que React pueda renderizar el progreso
   // antes de que XLSX.read bloquee el hilo principal (es síncrono)
-  await new Promise((resolve) => setTimeout(resolve, 50))
+  await new Promise((resolve) => setTimeout(resolve, 100))
 
   // XLSX.read con type:'array' espera un Uint8Array, NO un ArrayBuffer
   const data = new Uint8Array(buffer)
 
-  // Parsing con timeout (60 segundos)
+  console.log(`📊 Parseando archivo: ${file.name} (${file.size} bytes, ${data.length} Uint8Array length)`)
+
+  // Parsing con timeout (45 segundos)
   const workbook = await new Promise<XLSX.WorkBook>((resolve, reject) => {
     const timeout = setTimeout(() => {
-      reject(new Error('Timeout: el archivo tardó demasiado en parsear (60s). Puede ser muy grande o estar corrupto.'))
-    }, 60000)
+      reject(new Error(`Timeout: el archivo tardó más de 45 segundos en parsear. Tamaño: ${(file.size / 1024 / 1024).toFixed(2)} MB. Si es muy grande, intenta con un archivo más pequeño.`))
+    }, 45000)
 
-    try {
-      // XLSX.read es síncrono y puede tardar para archivos grandes
-      const wb = XLSX.read(data, { type: 'array', cellDates: true })
-      clearTimeout(timeout)
-      resolve(wb)
-    } catch (err: any) {
-      clearTimeout(timeout)
-      reject(new Error(`Error al parsear XLSB: ${err.message || err}`))
-    }
+    // Usar setTimeout(0) para ceder el control antes del parsing síncrono pesado
+    setTimeout(() => {
+      try {
+        const wb = XLSX.read(data, {
+          type: 'array',
+          cellDates: true,
+          // Optimización: no leer fórmulas ni estilos
+          cellFormula: false,
+          cellHTML: false,
+          cellStyles: false,
+          sheetStubs: false,
+        })
+        clearTimeout(timeout)
+        console.log(`✅ Workbook parseado: ${wb.SheetNames.length} hojas: ${wb.SheetNames.join(', ')}`)
+        resolve(wb)
+      } catch (err: any) {
+        clearTimeout(timeout)
+        console.error('❌ Error XLSX.read:', err)
+        reject(new Error(`Error al parsear archivo: ${err.message || err}. ¿Es un archivo XLSB/XLSX válido?`))
+      }
+    }, 0)
   })
 
   const hojas: ParsedSheet[] = []
